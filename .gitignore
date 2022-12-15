@@ -26,3 +26,6 @@ dist-ssr
 .DS_Store
 .data-prep/.ipynb_checkpoints
 .vscode
+
+.DS_Store
+.ipynb_checkpoints/
