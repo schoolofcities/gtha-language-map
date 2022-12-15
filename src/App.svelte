@@ -783,195 +783,227 @@
     layers.appendChild(link);
 
     if (id == 'Arabic'){
-    var img = document.createElement('img');
-    img.src = "data/Arabic.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#fb9a99'
+    var img = document.getElementById("circle1");
+    var newimg = img.cloneNode(true);
+    link.appendChild(newimg);
     }
 
     if (id == 'Bengali'){
-    var img = document.createElement('img');
-    img.src = "data/Bengali.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#edf907'
+    var img = document.getElementById("circle1");
+    var newimg2 = img.cloneNode(true);
+    link.appendChild(newimg2);
     }
 
     if (id == 'Cantonese'){
-    var img = document.createElement('img');
-    img.src = "data/Cantonese.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#2b13ff'
+    var img = document.getElementById("circle1");
+    var newimg3 = img.cloneNode(true);
+    link.appendChild(newimg3);
     }
 
     if (id == 'Croatian'){
-    var img = document.createElement('img');
-    img.src = "data/Croatian.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#af8080'
+    var img = document.getElementById("circle1");
+    var newimg4 = img.cloneNode(true);
+    link.appendChild(newimg4);
     }
 
     if (id == 'Dari'){
-    var img = document.createElement('img');
-    img.src = "data/Dari.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#cc67bd'
+    var img = document.getElementById("circle1");
+    var newimg5 = img.cloneNode(true);
+    link.appendChild(newimg5);
     }
 
     if (id == 'English'){
-    var img = document.createElement('img');
-    img.src = "data/English.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#FFCCCB'
+    var img = document.getElementById("circle1");
+    var newimg6 = img.cloneNode(true);
+    link.appendChild(newimg6);
     }
 
     if (id == 'French'){
-    var img = document.createElement('img');
-    img.src = "data/French.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#ad7400'
+    var img = document.getElementById("circle1");
+    var newimg7 = img.cloneNode(true);
+    link.appendChild(newimg7);
     }
 
     if (id == 'German'){
-    var img = document.createElement('img');
-    img.src = "data/German.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#000000'
+    var img = document.getElementById("circle1");
+    var newimg8 = img.cloneNode(true);
+    link.appendChild(newimg8);
     }
 
     if (id == 'Greek'){
-    var img = document.createElement('img');
-    img.src = "data/Greek.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#5abde8'
+    var img = document.getElementById("circle1");
+    var newimg9 = img.cloneNode(true);
+    link.appendChild(newimg9);
     }
 
     if (id == 'Gujarati'){
-    var img = document.createElement('img');
-    img.src = "data/Gujarati.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#ceb25d'
+    var img = document.getElementById("circle1");
+    var newimg10 = img.cloneNode(true);
+    link.appendChild(newimg10);
     }
 
     if (id == 'Hindi'){
-    var img = document.createElement('img');
-    img.src = "data/Hindi.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#6a6a6a'
+    var img = document.getElementById("circle1");
+    var newimg11 = img.cloneNode(true);
+    link.appendChild(newimg11);
     }
 
     if (id == 'Hungarian'){
-    var img = document.createElement('img');
-    img.src = "data/Hungarian.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#176426'
+    var img = document.getElementById("circle1");
+    var newimg12 = img.cloneNode(true);
+    link.appendChild(newimg12);
     }
 
     if (id == 'Iranian-Persian'){
-    var img = document.createElement('img');
-    img.src = "data/Iranian_Persian.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#fdbf6f'
+    var img = document.getElementById("circle1");
+    var newimg13 = img.cloneNode(true);
+    link.appendChild(newimg13);
     }
 
     if (id == 'Italian'){
-    var img = document.createElement('img');
-    img.src = "data/Italian.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#00fff7'
+    var img = document.getElementById("circle1");
+    var newimg14 = img.cloneNode(true);
+    link.appendChild(newimg14);
     }
 
     if (id == 'Korean'){
-    var img = document.createElement('img');
-    img.src = "data/Korean.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#d400ff'
+    var img = document.getElementById("circle1");
+    var newimg15 = img.cloneNode(true);
+    link.appendChild(newimg15);
     }
 
     if (id == 'Malayalam'){
-    var img = document.createElement('img');
-    img.src = "data/Malayalam.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#8cff00'
+    var img = document.getElementById("circle1");
+    var newimg16 = img.cloneNode(true);
+    link.appendChild(newimg16);
     }
 
     if (id == 'Mandarin'){
-    var img = document.createElement('img');
-    img.src = "data/Mandarin.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#ff0000'
+    var img = document.getElementById("circle1");
+    var newimg17 = img.cloneNode(true);
+    link.appendChild(newimg17);
     }
 
     if (id == 'Other'){
-    var img = document.createElement('img');
-    img.src = "data/Other.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = "#b2df8a"
+    var img = document.getElementById("circle1");
+    var newimg18 = img.cloneNode(true);
+    link.appendChild(newimg18);
     }
 
     if (id == 'Polish'){
-    var img = document.createElement('img');
-    img.src = "data/Polish.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#cbb5ff'
+    var img = document.getElementById("circle1");
+    var newimg19 = img.cloneNode(true);
+    link.appendChild(newimg19);
     }
 
     if (id == 'Portuguese'){
-    var img = document.createElement('img');
-    img.src = "data/Portuguese.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#33a02c'
+    var img = document.getElementById("circle1");
+    var newimg20 = img.cloneNode(true);
+    link.appendChild(newimg20);
     }
 
     if (id == 'Punjabi'){
-    var img = document.createElement('img');
-    img.src = "data/Punjabi.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#7f6646'
+    var img = document.getElementById("circle1");
+    var newimg21 = img.cloneNode(true);
+    link.appendChild(newimg21);
     }
 
     if (id == 'Romanian'){
-    var img = document.createElement('img');
-    img.src = "data/Romanian.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#ffffff'
+    var img = document.getElementById("circle1");
+    var newimg22 = img.cloneNode(true);
+    link.appendChild(newimg22);
     }
 
     if (id == 'Russian'){
-    var img = document.createElement('img');
-    img.src = "data/Russian.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#034493'
+    var img = document.getElementById("circle1");
+    var newimg23 = img.cloneNode(true);
+    link.appendChild(newimg23);
     }
 
     if (id == 'Serbian'){
-    var img = document.createElement('img');
-    img.src = "data/Serbian.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#720808'
+    var img = document.getElementById("circle1");
+    var newimg24 = img.cloneNode(true);
+    link.appendChild(newimg24);
     }
 
     if (id == 'Spanish'){
-    var img = document.createElement('img');
-    img.src = "data/Spanish.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#ff7f00'
+    var img = document.getElementById("circle1");
+    var newimg25 = img.cloneNode(true);
+    link.appendChild(newimg25);
     }
 
     if (id == 'Tagalog'){
-    var img = document.createElement('img');
-    img.src = "data/Tagalog.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#7b71f7'
+    var img = document.getElementById("circle1");
+    var newimg26 = img.cloneNode(true);
+    link.appendChild(newimg26);
     }
 
-     if (id == 'Tamil'){
-    var img = document.createElement('img');
-    img.src = "data/Tamil.png"
-    link.appendChild(img);
+    if (id == 'Tamil'){
+    document.getElementById("color1").style.fill = '#ffee00'
+    var img = document.getElementById("circle1");
+    var newimg27 = img.cloneNode(true);
+    link.appendChild(newimg27);
     }
 
     if (id == 'Telugu'){
-    var img = document.createElement('img');
-    img.src = "data/Telugu.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#cdc9ff'
+    var img = document.getElementById("circle1");
+    var newimg28 = img.cloneNode(true);
+    link.appendChild(newimg28);
     }
 
     if (id == 'Turkish'){
-    var img = document.createElement('img');
-    img.src = "data/Turkish.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#7393B3'
+    var img = document.getElementById("circle1");
+    var newimg29 = img.cloneNode(true);
+    link.appendChild(newimg29);
     }
 
     if (id == 'Ukrainian'){
-    var img = document.createElement('img');
-    img.src = "data/Ukrainian.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#ffc800'
+    var img = document.getElementById("circle1");
+    var newimg30 = img.cloneNode(true);
+    link.appendChild(newimg30);
     }
 
     if (id == 'Urdu'){
-    var img = document.createElement('img');
-    img.src = "data/Urdu.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#1f78b4'
+    var img = document.getElementById("circle1");
+    var newimg31 = img.cloneNode(true);
+    link.appendChild(newimg31);
     }
 
     if (id == 'Vietnamese'){
-    var img = document.createElement('img');
-    img.src = "data/Vietnamese.png"
-    link.appendChild(img);
+    document.getElementById("color1").style.fill = '#8b34be'
+    var img = document.getElementById("circle1");
+    var newimg32 = img.cloneNode(true);
+    link.appendChild(newimg32);
     }
 
 
@@ -992,6 +1024,9 @@
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 //<link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
 //<script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+<svg id="circle1" height="20" width="20">
+    <circle id="color1" cx="10" cy="10" r="8" stroke="black" stroke-width="0.5" fill="#ffffff" />
+</svg>
 <style>
 body { margin: 0; padding: 0; }
 #map { position: fixed; top: 0; bottom: 0; right: 0; left: 0; width: 100%; }
@@ -1036,13 +1071,12 @@ body { margin: 0; padding: 0; }
   #menu a.active {
     background-color: #D9DDDC;
     color: #000000;
-    //3887be, ffffff
   }
   
   #menu a.active:hover {
     background: #BEBDB8;
-    //#3074a4
   }
+
 </style>
   
 <nav id="menu">
