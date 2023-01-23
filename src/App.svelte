@@ -38,6 +38,24 @@
   
     map.on('load', () => {
 
+      map.addSource("gta", {
+      "type": "geojson",
+      "data": "data/gta.geojson"
+      });
+      
+      map.addLayer(
+      {
+      "id": "gta",
+      "type": "fill",
+      "source": "gta",
+      "paint": {
+      "fill-outline-color": "#000000",
+      "fill-color": "#CBC3E3",
+      "fill-opacity": 0.5
+      }
+      }
+      );
+      
       map.addSource("languages", {
       "type": "geojson",
       "data": "data/no_water_commercial_industrial.geojson"
@@ -49,8 +67,11 @@
         "id": "English",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "visible"
+        },
         "paint": {
-        "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 10]],
+        "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
         "circle-color": [
           'match',
@@ -69,6 +90,9 @@
         "id": "Mandarin",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "visible"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -90,6 +114,9 @@
         "id": "Cantonese",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "visible"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -109,6 +136,9 @@
         "id": "Punjabi",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "visible"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -130,6 +160,9 @@
         "id": "Spanish",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -151,6 +184,9 @@
         "id": "Urdu",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -172,6 +208,9 @@
         "id": "Italian",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -192,6 +231,9 @@
         "id": "Tagalog",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -212,6 +254,9 @@
         "id": "Tamil",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -232,6 +277,9 @@
         "id": "Arabic",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -252,6 +300,9 @@
         "id": "Portuguese",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -273,6 +324,9 @@
         "id": "Iranian-Persian",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -294,6 +348,9 @@
         "id": "Russian",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -314,6 +371,9 @@
         "id": "French",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -335,6 +395,9 @@
         "id": "Gujarati",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -356,6 +419,9 @@
         "id": "Polish",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -377,6 +443,9 @@
         "id": "Hindi",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -397,6 +466,9 @@
         "id": "Korean",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -418,6 +490,9 @@
         "id": "Vietnamese",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -438,6 +513,9 @@
         "id": "Bengali",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -459,6 +537,9 @@
         "id": "Greek",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -479,6 +560,9 @@
         "id": "German",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -499,6 +583,9 @@
         "id": "Ukrainian",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -520,6 +607,9 @@
         "id": "Serbian",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -541,6 +631,9 @@
         "id": "Dari",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -562,6 +655,9 @@
         "id": "Romanian",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -583,6 +679,9 @@
         "id": "Malayalam",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -603,6 +702,9 @@
         "id": "Croatian",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -623,6 +725,9 @@
         "id": "Turkish",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -644,6 +749,9 @@
         "id": "Hungarian",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -665,6 +773,9 @@
         "id": "Telugu",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -686,6 +797,9 @@
         "id": "Other",
         "type": "circle",
         "source": "languages",
+        "layout": {
+            "visibility": "none"
+        },
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
@@ -699,6 +813,69 @@
         }
       });
 
+       const languagelist = ['English', 'Mandarin', 'Cantonese', 'Punjabi', 'Spanish', 'Urdu', 'Italian', 'Tagalog', 'Tamil', 'Arabic', 'Portuguese','Iranian-Persian', 'Russian', 'French', 'Gujarati', 'Polish', 'Hindi', 'Korean', 'Vietnamese', 'Bengali', 'Greek', 'German', 'Ukrainian', 'Serbian', 'Dari', 'Romanian', 'Malayalam', 'Croatian', 'Turkish', 'Hungarian', 'Telugu', 'Other'];
+      // When a click event occurs on a feature in the places layer, open a popup at the
+      // location of the feature, with description HTML from its properties.
+      for (const id of languagelist) {
+      map.on('click', id, (e) => {
+      // Copy coordinates array.
+      const coordinates = e.features[0].geometry.coordinates.slice();
+      const language = e.features[0].properties.Language.trim();
+      const speaker = e.features[0].properties.Speaker_No.toString();
+      
+      // Ensure that if the map is zoomed out such that multiple
+      // copies of the feature are visible, the popup appears
+      // over the copy being pointed to.
+      while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+      }
+      
+      new mapboxgl.Popup()
+      .setLngLat(coordinates)
+      .setHTML(language + ',\n' +speaker)
+      .addTo(map);
+      });
+
+
+      // Change the cursor to a pointer when the mouse is over the places layer.
+      map.on('mouseenter', id, () => {
+      map.getCanvas().style.cursor = 'pointer';
+      });
+      
+      // Change it back to a pointer when it leaves.
+      map.on('mouseleave', id, () => {
+      map.getCanvas().style.cursor = '';
+      });
+      }
+
+      const layers = [
+      '500',
+      '1000'
+        ];
+      const sizes = [
+        '28px',
+        '63px'
+        ];
+
+      const legend = document.getElementById('legend');
+
+      layers.forEach((layer, i) => {
+        const color = '#FFEDA0'; //colors[i]
+        const item = document.createElement('div');
+        const key = document.createElement('span');
+        key.className = 'legend-key';
+        key.style.backgroundColor = color;
+        key.style.borderRadius = "50%";
+        key.style.width = sizes[i];
+        key.style.height = sizes[i];
+        key.style.verticalAlign = 'middle';
+
+        const value = document.createElement('span');
+        value.innerHTML = `${layer}`;
+        item.appendChild(key);
+        item.appendChild(value);
+        legend.appendChild(item);
+      });
       map.setFilter('Mandarin', ['==', 'Language', '            Mandarin']);
       map.setFilter('Cantonese', ['==', 'Language', '            Yue (Cantonese)']);
       map.setFilter('Punjabi', ['==', 'Language', '              Punjabi (Panjabi)']);
@@ -733,6 +910,7 @@
       map.setFilter('English', ['==', 'Language', '      English']);
     });
     
+    
 
     map.on('idle', () => {
       if (!map.getLayer('English') || !map.getLayer('Mandarin') || !map.getLayer('Cantonese') || !map.getLayer('Punjabi') || !map.getLayer('Spanish') || !map.getLayer('Urdu') || !map.getLayer('Italian') || !map.getLayer('Tagalog') || !map.getLayer('Tamil') || !map.getLayer('Arabic') || !map.getLayer('Portuguese') || !map.getLayer('Iranian-Persian') || !map.getLayer('Russian') || !map.getLayer('French') || !map.getLayer('Gujarati') || !map.getLayer('Polish') || !map.getLayer('Hindi') || !map.getLayer('Korean') || !map.getLayer('Vietnamese') || !map.getLayer('Bengali') || !map.getLayer('Greek') || !map.getLayer('German') || !map.getLayer('Ukrainian') || !map.getLayer('Serbian') || !map.getLayer('Dari') || !map.getLayer('Romanian') || !map.getLayer('Malayalam') || !map.getLayer('Croatian') || !map.getLayer('Turkish') || !map.getLayer('Hungarian') || !map.getLayer('Telugu') || !map.getLayer('Other') )  {
@@ -752,7 +930,9 @@
       link.id = id;
       link.href = '#';
       link.textContent = id;
-      link.className = 'active';
+      if (id ==='English' || id ==='Mandarin' || id ==='Cantonese' || id==='Punjabi') {
+        link.className = 'active';
+      } else { link.className = '';}
     
    
       link.onclick = function (e) {
@@ -1013,8 +1193,9 @@
 
 
 
-
+  
   });
+  
 </script>
 
 
@@ -1030,6 +1211,21 @@
 <style>
 body { margin: 0; padding: 0; }
 #map { position: fixed; top: 0; bottom: 0; right: 0; left: 0; width: 100%; }
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  width: 180px;
+}
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  margin-right: 20px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+}
 </style>
 </head>
 
@@ -1077,12 +1273,36 @@ body { margin: 0; padding: 0; }
     background: #BEBDB8;
   }
 
+  #legend {
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    line-height: 18px;
+    height: 150px;
+    margin-bottom: 40px;
+    margin-right: 1000px;
+    width: 300px;
+  }
+
+  .legend-key {
+    display: inline-block;
+    border-radius: 20%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+
 </style>
   
 <nav id="menu">
 </nav>
 
+
+
+
+
 <div id="map">
 </div>
+
+<div class='map-overlay' id='legend'></div>
  
 </body>
