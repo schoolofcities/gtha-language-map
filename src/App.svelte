@@ -14,6 +14,8 @@
   
   let pageWidth;
 
+  let added_languages=[];
+
   const maxBounds = [
 		[-80.161139, 43.286294], // SW coords
 		[-78.436960, 44.516575] // NE coords
@@ -894,7 +896,7 @@
         const filtered = [];
         for (const feature of languagelist) {
         //const name = normalize(feature.properties.Language);
-        if (normalize(feature).includes(value)) {
+        if (normalize(feature).includes(value) && value!='' && added_languages.includes(feature)==false) {
         filtered.push(feature);
         }
         //console.log(filtered)
@@ -1324,7 +1326,10 @@
     }
 
     function trial(feature) {
-
+      added_languages.push(feature)
+      renderListings([]);
+      document.getElementById('feature-filter').value=''
+      //console.log(added_languages)
       const link = document.createElement('a');
       link.id = feature;
       link.href = '#';
@@ -1333,9 +1338,12 @@
     
    
       const clickedLayer = feature;
+      map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+      link.className = 'active';
       //e.preventDefault();
       //e.stopPropagation();
     
+      /*
       const visibility = map.getLayoutProperty(
         clickedLayer,
         'visibility'
@@ -1353,7 +1361,7 @@
           'visible'
         );
       }
-
+      */
     
     const layers = document.getElementById('menu');
     layers.appendChild(link);
@@ -1601,6 +1609,8 @@
 
           getlink.onclick = function (e) {
 
+            added_languages.splice(added_languages.indexOf(id), 1)
+            console.log(added_languages)
             const clickedLayer = this.textContent;
             e.preventDefault();
             e.stopPropagation();
