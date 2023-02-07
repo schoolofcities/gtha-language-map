@@ -66,7 +66,7 @@
       
       map.addSource("languages", {
       "type": "geojson",
-      "data": "data/no_water_commercial_industrial.geojson"
+      "data": "data/language-dots.geojson"
       });
 
       //English 
