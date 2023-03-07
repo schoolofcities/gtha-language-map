@@ -864,7 +864,7 @@
         '28px',
         '63px'
         ];
-
+      /*
       const legend = document.getElementById('legend');
 
       layers.forEach((layer, i) => {
@@ -877,6 +877,7 @@
         key.style.width = sizes[i];
         key.style.height = sizes[i];
         key.style.verticalAlign = 'middle';
+        
 
         const value = document.createElement('span');
         value.innerHTML = `${layer}`;
@@ -884,7 +885,7 @@
         item.appendChild(value);
         legend.appendChild(item);
         });
-
+        */
         
 
 
@@ -901,9 +902,17 @@
         }
         //console.log(filtered)
         }
-        
+        //SORT HERE
+        const sortBySubstring = (words, match) => {
+          return words.sort((a, b) => {
+            return a.indexOf(match) - b.indexOf(match);
+          });
+        }
+
+        const result = sortBySubstring(filtered, e.target.value);
         // Populate the sidebar with filtered results
-        renderListings(filtered);
+        renderListings(result.slice(0,5));
+        //renderListings(filtered);
         
         // Set the filter to populate features into the layer.
         //if (filtered.length) {
@@ -928,11 +937,11 @@
         const toggleableLayerIds1 = ['English', 'Mandarin', 'Cantonese', 'Punjabi', 'Spanish', 'Urdu', 'Italian', 'Tagalog', 'Tamil', 'Arabic', 'Portuguese','Iranian-Persian', 'Russian', 'French', 'Gujarati', 'Polish', 'Hindi', 'Korean', 'Vietnamese', 'Bengali', 'Greek', 'German', 'Ukrainian', 'Serbian', 'Dari', 'Romanian', 'Malayalam', 'Croatian', 'Turkish', 'Hungarian', 'Telugu', 'Other'];
         for (const id of toggleableLayerIds1){
         if (id ==='Spanish' || id ==='Mandarin' || id ==='Cantonese' || id==='Punjabi') {
-
+        added_languages.push(id)
         const link = document.createElement('a');
         link.id = id;
         link.href = '#';
-        link.textContent = id;
+        link.textContent = 'X '+id;
         link.className = 'active';
         const clickedLayer = id;
         map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
@@ -1333,7 +1342,7 @@
       const link = document.createElement('a');
       link.id = feature;
       link.href = '#';
-      link.textContent = feature;
+      link.textContent = 'X '+feature;
       link.className = '';
     
    
@@ -1365,6 +1374,7 @@
     
     const layers = document.getElementById('menu');
     layers.appendChild(link);
+    
 
     if (feature == 'Arabic'){
     document.getElementById("color1").style.fill = '#fb9a99'
@@ -1611,7 +1621,7 @@
 
             added_languages.splice(added_languages.indexOf(id), 1)
             console.log(added_languages)
-            const clickedLayer = this.textContent;
+            const clickedLayer = this.textContent.substring(2);
             e.preventDefault();
             e.stopPropagation();
           
@@ -1629,7 +1639,7 @@
 
   
   });
-  
+
 </script>
 
 
@@ -1638,13 +1648,14 @@
   <title>Load data from an external GeoJSON file</title>
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   //<link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
-  //<script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+  // open script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"> close/script>
   <svg id="circle1" height="20" width="20">
       <circle id="color1" cx="10" cy="10" r="8" stroke="black" stroke-width="0.5" fill="#ffffff" />
   </svg>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <style>
   body { margin: 0; padding: 0; }
-  #map { position: fixed; top: 0; bottom: 0; right: 0; left: 0; width: 100%; }
+  #map { position: fixed; top: 0; bottom: 0; right: 0; left: 320px; width: 100%; }
   .mapboxgl-popup {
     max-width: 400px;
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -1684,19 +1695,22 @@
   .map-overlay .listing a:hover {
     background: #f0f0f0;
   }
+
+
   </style>
   </head>
 
   <body>
   <style>
     #menu {
-      background: #BEBDB8;
-      position: absolute;
+      //background: #ffffff; //BEBDB8
+      position: fixed;
       z-index: 1;
-      top: 10px;
-      right: 10px;
+      top: 0; //10
+      right: 0px;
+      left: 0px;
       border-radius: 3px;
-      width: 120px;
+      width: 200px; //120 300
       border: 1px solid rgba(0, 0, 0, 0.4);
       font-family: 'Open Sans', sans-serif;
     }
@@ -1704,17 +1718,18 @@
     #menu a {
       font-size: 10px;
       color: #404040;
-      display: block;
+      display: inline-block; //block
       margin: 0;
-      padding: 0;
+      //padding: 0;
       padding: 5px;
       text-decoration: none;
       border-bottom: 1px solid rgba(0, 0, 0, 0.25);
       text-align: center;
+      border: 1px solid #000000;
     }
     
     #menu a:last-child {
-      border: none;
+      border: 1px solid #000000; //none 
     }
     
     #menu a:hover {
@@ -1723,7 +1738,7 @@
     }
     
     #menu a.active {
-      background-color: #D9DDDC;
+      background-color: #D9DDDC; 
       color: #000000;
     }
     
@@ -1732,26 +1747,31 @@
     }
 
     #legend {
-      padding: 10px;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      //padding: 10px;
+      //box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
       line-height: 18px;
-      height: 150px;
-      margin-bottom: 40px;
+      height: 300px; //150
+      //margin-bottom: 10px;
       margin-right: 1000px;
       width: 300px;
+      left:0;
+      bottom: -150px;
     }
 
     .legend-key {
-      display: inline-block;
-      border-radius: 20%;
-      width: 10px;
-      height: 10px;
+      display: block;//inline-block
+      //border-radius: 20%;
+      //width: 10px;
+      //height: 10px;
       margin-right: 5px;
+      margin-bottom: -10px;
     }
 
+    
   </style>
     
-  <nav id="menu">
+  <nav id="menu" style = "position:fixed; left:0px; top:100px;">
   </nav>
 
 
@@ -1761,20 +1781,66 @@
   <div id="map">
   </div>
 
-  <div class='map-overlay' id='legend'></div>
+  <div class='map-overlay' id='legend'>
+    <svg height="400" width="400">
+      <circle cx="100" cy="40" r="32" stroke="gray" stroke-width="2" fill="yellow" />
+      <circle cx="100" cy="60" r="10" stroke="gray" stroke-width="2" fill="orange" />
+    </svg>
+  </div>
+
+  <div style="position:fixed; left:175px; bottom: 60px;" >
+      <p>500 speakers</p>
+  </div>
+
+  <div style="position:fixed; left:175px; bottom: 100px;" >
+      <p>5000 speakers</p>
+      
+  </div>
+
+  <div style="position:fixed; left:100px; bottom: 160px;" >
+      <div style="position:fixed; width: 7%" >
+      <hr/>
+      </div>
+  </div>
+
+  <div style="position:fixed; left:100px; bottom: 120px;" >
+      <div style="position:fixed; width: 7%" >
+      <hr/>
+      </div>
+  </div>
+  
 
   <div class="map-overlay">
   <fieldset>
-  <input id="feature-filter" type="text" placeholder="Filter results by name">
+  <input id="feature-filter" type="text" placeholder="Filter results by name" style = "position:fixed; left:145px; top:0px;">
   </fieldset>
-  <div id="feature-listing" class="listing"></div>
+  <div id="feature-listing" class="listing" style = "position:fixed; left:200px; top:30px;"></div>
   </div>
-  <script>
-    
-    
-  //script goes here
-    
-  </script>
-
+  <div class="container">
+  <div class="row justify-content-center">
+  <div class="col-4"> 
+  <div style = "position:fixed; left:0px; bottom:30px;">
+  <h1 class="h1">Mother Tongues</h1>
+  </div>
+  <div style = "position:fixed; left:0px; bottom:0px;">
+  <h1 class="h1">of the GTA</h1>
+  </div>
+  </div> 
+  </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
+<!--
+  <script>
+ </script>
+  //script goes here
+  //open script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"> close/script>
 
+  //close /body>
+
+  //close /html>
+
+ 
+
+//close /body>
+-->
