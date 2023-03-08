@@ -1,6 +1,8 @@
  
 <script>
 
+  import './styles.css';
+
   import { onMount } from 'svelte'
   import mapboxgl from "mapbox-gl";
 
@@ -1669,54 +1671,5 @@
 
 
 <style>
-
-  main { 
-    margin: 0; 
-    padding: 0; 
-  }
-
-  #map { 
-    position: fixed; 
-    top: 0; 
-    bottom: 0; 
-    right: 0; 
-    left: 320px; 
-    width: 100%; 
-  }
-
-  #panel {
-    background-color: rgb(242, 242, 242);
-    position: fixed; 
-    top: 0; 
-    bottom: 0; 
-    right: 0; 
-    left: 0; 
-    width: 320px;
-  }
-
-  #title {
-    height: 92px;
-    margin: 10px;
-    padding: 5px;
-    background-color: rgb(50, 136, 212);
-  }
-
-  #title h1 {
-    font-size: 21px;
-  }
-
-  #menu {
-    margin: 10px;
-    margin-top: 40px;
-    width: 300px; 
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  #feature-filter {
-    height: 22px;
-    border: 1px solid black;
-  }
-
 
 </style>
