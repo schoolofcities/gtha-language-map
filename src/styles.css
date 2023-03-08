@@ -71,6 +71,8 @@ main {
 }
 
 #menu {
+    align-content: left;
+    text-align: left;
     margin: 10px;
     width: 300px; 
     background-color: var(--brandWhite);
@@ -81,10 +83,13 @@ main {
 
 #menu a {
     color: var(--brandBlack);
-    margin: 5px;
+    font-weight: normal;
+    margin-left: 4px;
     border: 1px solid var(--brandGray);
     border-radius: 15px;
     background-color: #efefef;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #menu a:hover {
@@ -95,5 +100,6 @@ main {
 #feature-filter {
     height: 22px;
     border: 1px solid black;
+
 }
 

@@ -940,7 +940,7 @@
         const link = document.createElement('a');
         link.id = id;
         link.href = '#';
-        link.textContent = 'X '+id;
+        link.textContent = id;
         link.className = 'active';
         const clickedLayer = id;
         map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
@@ -1341,7 +1341,7 @@
       const link = document.createElement('a');
       link.id = feature;
       link.href = '#';
-      link.textContent = 'X '+feature;
+      link.textContent = feature;
       link.className = '';
     
    
