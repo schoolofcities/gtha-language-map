@@ -87,7 +87,7 @@ main {
 #menu a {
     color: var(--brandBlack);
     font-weight: normal;
-    font-size: 14px;
+    font-size: 13px;
     margin-left: 2px;
     margin-right: 2px;
     border: 1px solid var(--brandGray);
