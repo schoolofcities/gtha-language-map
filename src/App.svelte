@@ -1662,9 +1662,21 @@
     <div id="feature-listing" class="listing"></div>
     
     <div id="info">
-      <p>
-        Legend
-      </p>
+      <div id='legend'>
+        <svg height="75" width="200">
+          <circle cx="50" cy="40" r="32" stroke="black" stroke-width="1" fill="white" />
+          <circle cx="50" cy="61" r="10" stroke="black" stroke-width="1" fill="white" />
+          <line x1="65" y1="8" x2="100" y2="8" stroke="black" stroke-dasharray="4 1 4 1" />
+          <line x1="58" y1="50" x2="100" y2="50" stroke="black" stroke-dasharray="4 1 4 1"/>
+
+          <text x="102" y="15" class="svg-text">5,000 speakers</text>
+          <text x="102" y="59" class="svg-text">500 speakers</text>
+
+
+        </svg>
+      </div>
+    </div>
+    <div id="info">
       <p>
         Data sources, Github, etc.
       </p>

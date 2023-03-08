@@ -75,6 +75,7 @@ main {
     padding: 3px;
     align-content: left;
     text-align: left;
+    min-height: 24px;
     margin: 10px;
     width: 293px; 
     background-color: var(--brandWhite);
@@ -158,6 +159,15 @@ main {
     padding-left: 10px;
     padding-right: 10px;
     color: var(--brandBlack);
+    font-weight: normal;
+    font-size: 12px;
+    opacity: 0.85;
+}
+#legend {
+    opacity: 0.85;
+    padding: 0px;
+}
+.svg-text {
     font-weight: normal;
     font-size: 12px;
     opacity: 0.85;
