@@ -16,8 +16,8 @@
   let added_languages=[];
 
   const maxBounds = [
-		[-80.161139, 43.286294], // SW coords
-		[-78.436960, 44.516575] // NE coords
+		[-81.0, 42.4], // SW coords
+		[-78.0, 45.0] // NE coords
 	];
 
 
