@@ -1644,8 +1644,8 @@
 
 <main>
 
-  <svg id="circle1" height="20" width="20">
-    <circle id="color1" cx="10" cy="10" r="8" stroke="black" stroke-width="0.5" fill="#ffffff" />
+  <svg id="circle1" height="14" width="14">
+    <circle id="color1" cx="7" cy="7" r="6" stroke="#D0D1C9" stroke-width="1" fill="#ffffff" />
   </svg>
 
   <div id="panel">
@@ -1657,9 +1657,18 @@
     <nav id="menu">
     </nav>
 
-    <div id="feature-listing" class="listing"></div>
+    <input id="feature-filter" type="text" placeholder="  Search For Languages (Click Above To Remove)">
 
-    <input id="feature-filter" type="text" placeholder="Search for Languages">
+    <div id="feature-listing" class="listing"></div>
+   
+    <div id="info">
+      <p>
+        Hello here is some information about this page
+      </p>
+      <p>
+        Something something data sources, github
+      </p>
+    </div>
     
   </div>
 
