@@ -2,6 +2,7 @@
 <script>
 
   import './styles.css';
+  import logo from './assets/top-logo-full.svg';
 
   import { onMount } from 'svelte'
   import mapboxgl from "mapbox-gl";
@@ -22,18 +23,15 @@
 
   onMount(() => {
     map = new mapboxgl.Map({
-      container: 'map', // container ID
-      style: 'mapbox://styles/schoolofcities/clddge3j0006q01o7fi0p3xyq', //style URL
-      //  mapbox://styles/mapbox/light-v10 
-      //zoom: 2, // starting zoom
-      //center: [108, 4], // // starting center in [lng, lat]
+      container: 'map',
+      style: 'mapbox://styles/schoolofcities/clddge3j0006q01o7fi0p3xyq',
       center: [-79.32, 43.775], 
 			zoom: 10,
 			maxZoom: 13.5,
 			minZoom: 2,
 			bearing: -17.7,
 			maxBounds: maxBounds,
-      projection: 'globe', // display map as a 3D globe
+      projection: 'globe',
       bearing: -17.1
     });
  
@@ -1650,6 +1648,8 @@
 
   <div id="panel">
 
+
+
     <div id="title">
       <h1>Knowledge of Languages in the Greater Toronto & Hamilton Area</h1>
     </div>
@@ -1679,6 +1679,10 @@
       <p>
         Data sources, Github, etc.
       </p>
+    </div>
+
+    <div id="logo">
+      <a href="https://www.schoolofcities.utoronto.ca/"><img src={logo} alt="School of Cities"></a>
     </div>
 
   </div>

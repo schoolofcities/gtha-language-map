@@ -52,10 +52,13 @@ main {
     border-right: 1px solid var(--brandGray);
 }
 
+
+
 #title {
     height: 102px;
     margin: 10px;
     margin-bottom: 30px;
+    margin-top: 30px;
     padding: 0px;
     background-color: var(--brandWhite);
     border-top: 1px solid var(--brandGray);
@@ -171,4 +174,22 @@ main {
     font-weight: normal;
     font-size: 12px;
     opacity: 0.85;
+}
+
+
+#logo {
+    margin: auto;
+    max-width: 230px;
+    margin-top: 5px;
+    height: 45px;
+}
+
+#logo img {
+		height: 50px;
+		color: blue;
+}
+#logo img:hover {
+    height: 50px;
+    opacity: 0.7;
+    cursor: pointer;
 }
