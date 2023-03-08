@@ -1643,12 +1643,14 @@
 <main>
 
   <svg id="circle1" height="20" width="20">
-
     <circle id="color1" cx="10" cy="10" r="8" stroke="black" stroke-width="0.5" fill="#ffffff" />
-
   </svg>
 
   <div id="panel">
+
+    <div id="title">
+      <h1>Knowledge of Languages in the Greater Toronto & Hamilton Area</h1>
+    </div>
 
     <nav id="menu">
     </nav>
@@ -1657,15 +1659,9 @@
 
     <input id="feature-filter" type="text" placeholder="Search for Languages">
     
-    
-
   </div>
 
   <div id="map">
-  </div>
-
-  <div id="active">
-    meow
   </div>
 
 </main>
@@ -1690,7 +1686,23 @@
 
   #panel {
     background-color: rgb(242, 242, 242);
-    position: fixed; top: 0; bottom: 0; right: 0; left: 0px; width: 320px;
+    position: fixed; 
+    top: 0; 
+    bottom: 0; 
+    right: 0; 
+    left: 0; 
+    width: 320px;
+  }
+
+  #title {
+    height: 92px;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(50, 136, 212);
+  }
+
+  #title h1 {
+    font-size: 21px;
   }
 
   #menu {
@@ -1702,13 +1714,9 @@
   }
 
   #feature-filter {
-    height: 25px;
+    height: 22px;
     border: 1px solid black;
   }
 
-  #active {
-    background-color: aliceblue;
-    border: solid 1px black;
-  }
 
 </style>
