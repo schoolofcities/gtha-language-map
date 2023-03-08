@@ -8,7 +8,7 @@
   import { onMount } from 'svelte'
   import mapboxgl from "mapbox-gl";
 
-  mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xhYjg0ZTl3MDIydDN3b3MzZmV4dXIydSJ9.lR7rnaKdBdTNGcc2kGDPbQ'; //'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2w2Z2xhOXprMTYzczNlcHNjMnNvdGlmNCJ9.lOgVHrajc1L-LlU0as2i2A';
+  mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xhYjg0ZTl3MDIydDN3b3MzZmV4dXIydSJ9.lR7rnaKdBdTNGcc2kGDPbQ';
   
   let map;
   
@@ -66,7 +66,7 @@
       
       map.addSource("languages", {
       "type": "geojson",
-      "data": "data/no_water_commercial_industrial.geojson"
+      "data": "data/language-dots.geojson"
       });
 
       //English 
