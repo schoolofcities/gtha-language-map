@@ -1,9 +1,5 @@
-
-
-
-  
  
-  <script>
+<script>
 
   import { onMount } from 'svelte'
   import mapboxgl from "mapbox-gl";
@@ -20,6 +16,7 @@
 		[-80.161139, 43.286294], // SW coords
 		[-78.436960, 44.516575] // NE coords
 	];
+
 
   onMount(() => {
     map = new mapboxgl.Map({
@@ -1636,211 +1633,82 @@
         } 
       });
     
-
-  
   });
 
 </script>
 
 
-  <head>
-  <meta charset="utf-8">
-  <title>Load data from an external GeoJSON file</title>
-  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-  //<link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
-  // open script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"> close/script>
+
+
+<main>
+
   <svg id="circle1" height="20" width="20">
-      <circle id="color1" cx="10" cy="10" r="8" stroke="black" stroke-width="0.5" fill="#ffffff" />
+
+    <circle id="color1" cx="10" cy="10" r="8" stroke="black" stroke-width="0.5" fill="#ffffff" />
+
   </svg>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <style>
-  body { margin: 0; padding: 0; }
-  #map { position: fixed; top: 0; bottom: 0; right: 0; left: 320px; width: 100%; }
-  .mapboxgl-popup {
-    max-width: 400px;
-    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    width: 180px;
-  }
-  .map-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: #fff;
-    margin-right: 20px;
-    font-family: Arial, sans-serif;
-    overflow: auto;
-    border-radius: 3px;
-  }
-  .map-overlay .listing {
-    overflow: auto;
-    max-height: 100%;
-  }
-  
-  .map-overlay .listing > * {
-    display: block;
-    padding: 5px 10px;
-    margin: 0;
-  }
-  
-  .map-overlay .listing a {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    color: #404;
-    text-decoration: none;
-  }
-  
-  .map-overlay .listing a:last-child {
-    border: none;
-  }
-  
-  .map-overlay .listing a:hover {
-    background: #f0f0f0;
-  }
 
+  <div id="panel">
 
-  </style>
-  </head>
+    <nav id="menu">
+    </nav>
 
-  <body>
-  <style>
-    #menu {
-      //background: #ffffff; //BEBDB8
-      position: fixed;
-      z-index: 1;
-      top: 0; //10
-      right: 0px;
-      left: 0px;
-      border-radius: 3px;
-      width: 200px; //120 300
-      border: 1px solid rgba(0, 0, 0, 0.4);
-      font-family: 'Open Sans', sans-serif;
-    }
+    <div id="feature-listing" class="listing"></div>
+
+    <input id="feature-filter" type="text" placeholder="Search for Languages">
     
-    #menu a {
-      font-size: 10px;
-      color: #404040;
-      display: inline-block; //block
-      margin: 0;
-      //padding: 0;
-      padding: 5px;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-      text-align: center;
-      border: 1px solid #000000;
-    }
     
-    #menu a:last-child {
-      border: 1px solid #000000; //none 
-    }
-    
-    #menu a:hover {
-      background-color: #f8f8f8;
-      color: #404040;
-    }
-    
-    #menu a.active {
-      background-color: #D9DDDC; 
-      color: #000000;
-    }
-    
-    #menu a.active:hover {
-      background: #BEBDB8;
-    }
 
-    #legend {
-      position: fixed;
-      //padding: 10px;
-      //box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-      line-height: 18px;
-      height: 300px; //150
-      //margin-bottom: 10px;
-      margin-right: 1000px;
-      width: 300px;
-      left:0;
-      bottom: -150px;
-    }
-
-    .legend-key {
-      display: block;//inline-block
-      //border-radius: 20%;
-      //width: 10px;
-      //height: 10px;
-      margin-right: 5px;
-      margin-bottom: -10px;
-    }
-
-    
-  </style>
-    
-  <nav id="menu" style = "position:fixed; left:0px; top:100px;">
-  </nav>
-
-
-
-
+  </div>
 
   <div id="map">
   </div>
 
-  <div class='map-overlay' id='legend'>
-    <svg height="400" width="400">
-      <circle cx="100" cy="40" r="32" stroke="gray" stroke-width="2" fill="yellow" />
-      <circle cx="100" cy="60" r="10" stroke="gray" stroke-width="2" fill="orange" />
-    </svg>
+  <div id="active">
+    meow
   </div>
 
-  <div style="position:fixed; left:175px; bottom: 60px;" >
-      <p>500 speakers</p>
-  </div>
+</main>
 
-  <div style="position:fixed; left:175px; bottom: 100px;" >
-      <p>5000 speakers</p>
-      
-  </div>
 
-  <div style="position:fixed; left:100px; bottom: 160px;" >
-      <div style="position:fixed; width: 7%" >
-      <hr/>
-      </div>
-  </div>
 
-  <div style="position:fixed; left:100px; bottom: 120px;" >
-      <div style="position:fixed; width: 7%" >
-      <hr/>
-      </div>
-  </div>
-  
+<style>
 
-  <div class="map-overlay">
-  <fieldset>
-  <input id="feature-filter" type="text" placeholder="Filter results by name" style = "position:fixed; left:145px; top:0px;">
-  </fieldset>
-  <div id="feature-listing" class="listing" style = "position:fixed; left:200px; top:30px;"></div>
-  </div>
-  <div class="container">
-  <div class="row justify-content-center">
-  <div class="col-4"> 
-  <div style = "position:fixed; left:0px; bottom:30px;">
-  <h1 class="h1">Mother Tongues</h1>
-  </div>
-  <div style = "position:fixed; left:0px; bottom:0px;">
-  <h1 class="h1">of the GTA</h1>
-  </div>
-  </div> 
-  </div>
-  </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
-<!--
-  <script>
- </script>
-  //script goes here
-  //open script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"> close/script>
+  main { 
+    margin: 0; 
+    padding: 0; 
+  }
 
-  //close /body>
+  #map { 
+    position: fixed; 
+    top: 0; 
+    bottom: 0; 
+    right: 0; 
+    left: 320px; 
+    width: 100%; 
+  }
 
-  //close /html>
+  #panel {
+    background-color: rgb(242, 242, 242);
+    position: fixed; top: 0; bottom: 0; right: 0; left: 0px; width: 320px;
+  }
 
- 
+  #menu {
+    margin: 10px;
+    margin-top: 40px;
+    width: 300px; 
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-family: 'Open Sans', sans-serif;
+  }
 
-//close /body>
--->
+  #feature-filter {
+    height: 25px;
+    border: 1px solid black;
+  }
+
+  #active {
+    background-color: aliceblue;
+    border: solid 1px black;
+  }
+
+</style>
