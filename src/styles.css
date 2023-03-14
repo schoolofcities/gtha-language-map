@@ -79,11 +79,9 @@ main {
     align-content: left;
     text-align: left;
     min-height: 24px;
-    margin: 10px;
+    margin: 7px;
     width: 293px; 
     background-color: var(--brandWhite);
-    /* border-top: 1px solid var(--brandGray); */
-    /* border-bottom: 1px solid var(--brandGray); */
     border-radius: 15px;
 }
 
@@ -91,8 +89,8 @@ main {
     color: var(--brandBlack);
     font-weight: normal;
     font-size: 13px;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 0px;
+    margin-right: 4px;
     border: 1px solid var(--brandGray);
     border-radius: 15px;
     background-color: #efefef;
@@ -112,9 +110,10 @@ main {
     margin-left: 10px;
     margin-right: 11px;
     margin-bottom: 5px;
-    width: 295px;
+    width: 285px;
     border: 1px solid var(--brandGray);
     border-radius: 15px;
+    padding-left: 10px;
 }
 
 #feature-listing {

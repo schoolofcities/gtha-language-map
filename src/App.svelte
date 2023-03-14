@@ -1657,7 +1657,7 @@
     <nav id="menu">
     </nav>
 
-    <input id="feature-filter" type="text" placeholder="  Search For Languages (Click Above To Remove)">
+    <input id="feature-filter" type="text" placeholder="Search For Languages (Click Above To Remove)">
 
     <div id="feature-listing" class="listing"></div>
     
