@@ -63,7 +63,7 @@ main {
     background-color: var(--brandWhite);
     border-top: 1px solid var(--brandGray);
     border-bottom: 1px solid var(--brandGray);
-    border-radius: 15px;
+    border-radius: 3px;
 }
 
 #title h1 {
@@ -82,8 +82,8 @@ main {
     margin: 10px;
     width: 293px; 
     background-color: var(--brandWhite);
-    border-top: 1px solid var(--brandGray);
-    border-bottom: 1px solid var(--brandGray);
+    /* border-top: 1px solid var(--brandGray); */
+    /* border-bottom: 1px solid var(--brandGray); */
     border-radius: 15px;
 }
 
@@ -154,7 +154,7 @@ main {
     text-align: left;
     border-top: 1px solid var(--brandGray);
     border-bottom: 1px solid var(--brandGray);
-    border-radius: 15px;
+    border-radius: 3px;
 }
 #info p {
     margin: 0px;

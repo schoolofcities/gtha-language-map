@@ -1666,10 +1666,9 @@
         <svg height="74" width="200">
           <circle cx="50" cy="40" r="32" stroke="black" stroke-width="1" fill="white" />
           <circle cx="50" cy="61" r="10" stroke="black" stroke-width="1" fill="white" />
-          <line x1="65" y1="8" x2="100" y2="8" stroke="black" stroke-dasharray="4 1 4 1" />
-          <line x1="58" y1="50" x2="100" y2="50" stroke="black" stroke-dasharray="4 1 4 1"/>
-
-          <text x="102" y="15" class="svg-text">5,000 speakers</text>
+          <line x1="65" y1="9" x2="100" y2="9" stroke="black" stroke-dasharray="4 1 4 1" />
+          <line x1="58" y1="51" x2="100" y2="51" stroke="black" stroke-dasharray="4 1 4 1"/>
+          <text x="102" y="17" class="svg-text">5,000 speakers</text>
           <text x="102" y="59" class="svg-text">500 speakers</text>
         </svg>
       </div>
