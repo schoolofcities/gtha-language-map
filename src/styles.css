@@ -1,0 +1,194 @@
+
+@font-face {
+    font-family: TradeGothicBold;
+    src: url("./assets/Trade Gothic LT Bold.ttf");
+}
+
+:root {
+    font-family: Roboto, sans-serif;
+    --brandDarkBlue: #1E3765;
+    --brandMedBlue: #007FA3;
+    --brandLightBlue: #6FC7EA;
+    --brandPurple: #6D247A;
+    --brandPink: #AB1368;
+    --brandDarkGreen: #0D534D;
+    --brandMedGreen: #00A189;
+    --brandLightGreen: #8DBF2E;
+    --brandRed: #DC4633; 
+    --brandYellow: #F1C500;
+    --brandBlack: #000000;
+    --brandWhite: #ffffff;
+    --brandGray: #D0D1C9;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--brandWhite);
+}
+
+main { 
+    margin: 0; 
+    padding: 0; 
+}
+
+#map { 
+    position: fixed; 
+    top: 0; 
+    bottom: 0; 
+    right: 0; 
+    left: 320px; 
+    width: 100%; 
+}
+
+#panel {
+    background-color: var(--brandWhite);
+    position: fixed; 
+    top: 0; 
+    bottom: 0; 
+    right: 0; 
+    left: 0; 
+    width: 319px;
+    border-right: 1px solid var(--brandGray);
+}
+
+
+
+#title {
+    height: 102px;
+    margin: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 0px;
+    background-color: var(--brandWhite);
+    border-top: 1px solid var(--brandGray);
+    border-bottom: 1px solid var(--brandGray);
+    border-radius: 3px;
+}
+
+#title h1 {
+    font-size: 25px;
+    margin: 0px;
+    padding: 10px;
+    color: var(--brandBlack);
+    font-family: TradeGothicBold, san-serif;
+}
+
+#menu {
+    padding: 3px;
+    align-content: left;
+    text-align: left;
+    min-height: 24px;
+    margin: 7px;
+    width: 293px; 
+    background-color: var(--brandWhite);
+    border-radius: 15px;
+}
+
+#menu a {
+    color: var(--brandBlack);
+    font-weight: normal;
+    font-size: 13px;
+    margin-left: 0px;
+    margin-right: 4px;
+    border: 1px solid var(--brandGray);
+    border-radius: 15px;
+    background-color: #efefef;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#menu a:hover {
+    color: var(--brandRed);
+    background-color: white;
+}
+
+#feature-filter {
+    height: 22px;
+    margin-left: 10px;
+    margin-right: 11px;
+    margin-bottom: 5px;
+    width: 285px;
+    border: 1px solid var(--brandGray);
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+#feature-listing {
+    margin-left: 7px;
+    overflow-x:hidden;
+    height: 27px;
+    width: 300px;
+    align-content: left;
+    text-align: left;
+    margin-bottom: -7px;
+}
+
+#feature-listing a {
+    color: var(--brandBlack);
+    font-weight: normal;
+    height: 18px;
+    font-size: 14px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 1px solid var(--brandGray);
+    border-radius: 15px;
+    background-color: var(--brandWhite);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+#feature-listing a:hover {
+    background-color: var(--brandLightBlue);
+}
+
+#info {
+    margin: 10px;
+    margin-top: 15px;
+    text-align: left;
+    border-top: 1px solid var(--brandGray);
+    border-bottom: 1px solid var(--brandGray);
+    border-radius: 3px;
+}
+#info p {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--brandBlack);
+    font-weight: normal;
+    font-size: 12px;
+    opacity: 0.85;
+}
+#legend {
+    opacity: 0.85;
+    padding: 0px;
+}
+.svg-text {
+    font-weight: normal;
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+
+#logo {
+    margin: auto;
+    max-width: 230px;
+    margin-top: 5px;
+    height: 45px;
+}
+
+#logo img {
+		height: 50px;
+		color: blue;
+}
+#logo img:hover {
+    height: 50px;
+    opacity: 0.7;
+    cursor: pointer;
+}
