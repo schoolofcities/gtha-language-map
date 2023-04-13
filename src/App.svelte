@@ -20,9 +20,11 @@
 		[-78.0, 45.0] // NE coords
 	];
 
-  let ctuid=0
-  let languagelist=['Bosnian', 'Croatian', 'Dari', 'Iranian Persian', 'Odia', 'Serbian', 'Afrikaans', 'Assyrian Neo-Aramaic', 'Belarusian', 'Bengali', 'Bulgarian', 'Chaldean Neo-Aramaic', 'Czech', 'Danish', 'Dutch', 'German', 'Gujarati', 'Hindi', 'Kacchi', 'Konkani', 'Kurdish', 'Latvian', 'Lithuanian', 'Macedonian', 'Marathi', 'Nepali', 'Norwegian', 'Pashto', 'Polish', 'Punjabi (Panjabi)', 'Russian', 'Serbo-Croatian', 'Sindhi', 'Sinhala (Sinhalese)', 'Slovak', 'Slovene (Slovenian)', 'Swedish', 'Ukrainian', 'Urdu', 'Yiddish', 'Amharic', 'Arabic', 'Hakka', 'Harari', 'Hausa', 'Hebrew', 'Irish', 'Italian', 'Maltese', 'Mandarin', 'Min Dong', 'Min Nan (Chaochow, Teochow, Fukien, Taiwanese)', 'Oromo', 'Portuguese', 'Romanian', 'Somali', 'Spanish', 'Tibetan', 'Tigrigna', 'Wu (Shanghainese)', 'Yue (Cantonese)', 'Akan (Twi)', 'Albanian', 'American Sign Language', 'Armenian', 'Azerbaijani', 'Cebuano', 'Coptic', 'Edo', 'Estonian', 'Finnish', 'Ga', 'Ganda', 'Greek', 'Haitian Creole', 'Hiligaynon', 'Hungarian', 'Igbo', 'Ilocano', 'Indonesian', 'Jamaican English Creole', 'Kannada', 'Khmer (Cambodian)', 'Lao', 'Lingala', 'Malay', 'Malayalam', 'Morisyen', 'Pampangan (Kapampangan, Pampango)', 'Rundi (Kirundi)', 'Shona', 'Swahili', 'Tagalog (Pilipino, Filipino)', 'Tamil', 'Telugu', 'Thai', 'Tulu', 'Turkish', 'Vietnamese', 'Yoruba', 'Georgian', 'Japanese', 'Korean', 'English', 'French', 'Other']
-  let colorlist=['#7149d5', '#229046', '#4a895f', '#32bd8c', '#8576b3', '#c85574', '#c6a9f6', '#945cd4', '#ca5271', '#367830', '#e7b150', '#d286e3', '#721fe9', '#1469b8', '#a5662b', '#b3d933', '#ae39c3', '#56fe9d', '#282e31', '#d47031', '#1dca65', '#f29a2c', '#6166dd', '#06ee05', '#c1db6b', '#8d03c3', '#ab628c', '#98bec4', '#acd89b', '#8f5009', '#e30f6b', '#669935', '#d8edcb', '#1fbb85', '#94219b', '#3bb3aa', '#922b39', '#31dd46', '#7973bb', '#023a26', '#21da3f', '#07f96f', '#a1d548', '#99f90d', '#87d6dc', '#a3c56a', '#ac2732', '#906ff6', '#c7cac4', '#861c25', '#0f3191', '#88eb30', '#fa5b01', '#3b6492', '#cbc5f4', '#475c0e', '#9d6173', '#fc444a', '#721efd', '#54ea06', '#e88a56', '#46de58', '#6c3bb1', '#f0c52a', '#f2b99b', '#8c65b3', '#2e34f3', '#db8e90', '#70d129', '#d4bc14', '#14cd13', '#6f1522', '#9b2e82', '#d9c8a1', '#a1e000', '#5e94f5', '#1bc4f5', '#37361d', '#76a7a4', '#4751db', '#9ec566', '#25945d', '#50d330', '#12e76f', '#e9080a', '#2f0ddf', '#157fcd', '#ce8392', '#e7afb7', '#012a18', '#a766fe', '#02d6bf', '#dcac2f', '#3054b9', '#715619', '#605adf', '#ce99a3', '#acd1a6', '#f3fd0f', '#878dd1', '#77f4cd', '#d276fa', '#a0ed10', '#d4993d', '#8947a4', '#92114d']
+  let ctuid = 0
+  let languagelist = ['Bosnian', 'Croatian', 'Dari', 'Iranian Persian', 'Odia', 'Serbian', 'Afrikaans', 'Assyrian Neo-Aramaic', 'Belarusian', 'Bengali', 'Bulgarian', 'Chaldean Neo-Aramaic', 'Czech', 'Danish', 'Dutch', 'German', 'Gujarati', 'Hindi', 'Kacchi', 'Konkani', 'Kurdish', 'Latvian', 'Lithuanian', 'Macedonian', 'Marathi', 'Nepali', 'Norwegian', 'Pashto', 'Polish', 'Punjabi (Panjabi)', 'Russian', 'Serbo-Croatian', 'Sindhi', 'Sinhala (Sinhalese)', 'Slovak', 'Slovene (Slovenian)', 'Swedish', 'Ukrainian', 'Urdu', 'Yiddish', 'Amharic', 'Arabic', 'Hakka', 'Harari', 'Hausa', 'Hebrew', 'Irish', 'Italian', 'Maltese', 'Mandarin', 'Min Dong', 'Min Nan (Chaochow, Teochow, Fukien, Taiwanese)', 'Oromo', 'Portuguese', 'Romanian', 'Somali', 'Spanish', 'Tibetan', 'Tigrigna', 'Wu (Shanghainese)', 'Yue (Cantonese)', 'Akan (Twi)', 'Albanian', 'American Sign Language', 'Armenian', 'Azerbaijani', 'Cebuano', 'Coptic', 'Edo', 'Estonian', 'Finnish', 'Ga', 'Ganda', 'Greek', 'Haitian Creole', 'Hiligaynon', 'Hungarian', 'Igbo', 'Ilocano', 'Indonesian', 'Jamaican English Creole', 'Kannada', 'Khmer (Cambodian)', 'Lao', 'Lingala', 'Malay', 'Malayalam', 'Morisyen', 'Pampangan (Kapampangan, Pampango)', 'Rundi (Kirundi)', 'Shona', 'Swahili', 'Tagalog (Pilipino, Filipino)', 'Tamil', 'Telugu', 'Thai', 'Tulu', 'Turkish', 'Vietnamese', 'Yoruba', 'Georgian', 'Japanese', 'Korean', 'English', 'French', 'Other']
+
+  let colorlist = ['#7149d5', '#229046', '#4a895f', '#32bd8c', '#8576b3', '#c85574', '#c6a9f6', '#945cd4', '#ca5271', '#367830', '#e7b150', '#d286e3', '#721fe9', '#1469b8', '#a5662b', '#b3d933', '#ae39c3', '#56fe9d', '#282e31', '#d47031', '#1dca65', '#f29a2c', '#6166dd', '#06ee05', '#c1db6b', '#8d03c3', '#ab628c', '#98bec4', '#acd89b', '#8f5009', '#e30f6b', '#669935', '#d8edcb', '#1fbb85', '#94219b', '#3bb3aa', '#922b39', '#31dd46', '#7973bb', '#023a26', '#21da3f', '#07f96f', '#a1d548', '#99f90d', '#87d6dc', '#a3c56a', '#ac2732', '#906ff6', '#c7cac4', '#861c25', '#0f3191', '#88eb30', '#fa5b01', '#3b6492', '#cbc5f4', '#475c0e', '#9d6173', '#fc444a', '#721efd', '#54ea06', '#e88a56', '#46de58', '#6c3bb1', '#f0c52a', '#f2b99b', '#8c65b3', '#2e34f3', '#db8e90', '#70d129', '#d4bc14', '#14cd13', '#6f1522', '#9b2e82', '#d9c8a1', '#a1e000', '#5e94f5', '#1bc4f5', '#37361d', '#76a7a4', '#4751db', '#9ec566', '#25945d', '#50d330', '#12e76f', '#e9080a', '#2f0ddf', '#157fcd', '#ce8392', '#e7afb7', '#012a18', '#a766fe', '#02d6bf', '#dcac2f', '#3054b9', '#715619', '#605adf', '#ce99a3', '#acd1a6', '#f3fd0f', '#878dd1', '#77f4cd', '#d276fa', '#a0ed10', '#d4993d', '#8947a4', '#92114d']
+
   onMount(() => {
     map = new mapboxgl.Map({
       container: 'map',
@@ -38,36 +40,15 @@
     });
  
     map.on('style.load', () => {
-      map.setFog({}); // enable atmosphere and stars
+      map.setFog({}); 
     });
   
     map.on('load', () => {
-
-      /*
-      map.addSource("gta", {
-      "type": "geojson",
-      "data": "data/gta.geojson"
-      });
-      
-      map.addLayer(
-      {
-      "id": "gta",
-      "type": "fill",
-      "source": "gta",
-      "paint": {
-      "fill-outline-color": "#000000",
-      "fill-color": "#CBC3E3",
-      "fill-opacity": 0.5
-      }
-      }
-      );
-      */
       
       map.addSource("languages", {
-      "type": "geojson",
-      "data": "data/rand_points_spoken_languages_GTA_no_water_final2.geojson"
+        "type": "geojson",
+        "data": "data/rand_points_spoken_languages_GTA_no_water_final2.geojson"
       });
-
 
       languagelist.forEach((feature) => {
         map.addLayer({
@@ -80,6 +61,14 @@
         "paint": {
         "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
         "circle-stroke-width": 1,
+        "circle-stroke-color": [
+          'match',
+          ['get', 'Language'],
+          feature,
+          colorlist[languagelist.indexOf(feature)],
+          '#ccc'
+        ],
+        "circle-opacity": 0.6,
         "circle-color": [
           'match',
           ['get', 'Language'],
@@ -92,7 +81,7 @@
     });
 
   
-      //const languagelist = ['English', 'Mandarin', 'Cantonese', 'Punjabi', 'Spanish', 'Urdu', 'Italian', 'Tagalog', 'Tamil', 'Arabic', 'Portuguese','Iranian-Persian', 'Russian', 'French', 'Gujarati', 'Polish', 'Hindi', 'Korean', 'Vietnamese', 'Bengali', 'Greek', 'German', 'Ukrainian', 'Serbian', 'Dari', 'Romanian', 'Malayalam', 'Croatian', 'Turkish', 'Hungarian', 'Telugu', 'Other'];
+      
       // When a click event occurs on a feature in the places layer, open a popup at the
       // location of the feature, with description HTML from its properties.
       for (const id of languagelist) {
@@ -115,21 +104,21 @@
       .addTo(map);
 
       var features = map.queryRenderedFeatures(e.point, {layers:['gtha-da-2021']});
-      if (ctuid != features[0].properties.DAUID) {
-				var style = [
-					"match",
-					["get", "DAUID"],
-					[features[0].properties.DAUID],
-					"#f1c500",
-					'transparent'
-				]
-        console.log(features[0].properties.DAUID)
-				map.setPaintProperty('gtha-da-2021', 'fill-color', style)
-				ctuid = features[0].properties.DAUID
-			} else {
-				map.setPaintProperty('gtha-da-2021', 'fill-color', 'transparent')
-				ctuid = 0
-			}
+        if (ctuid != features[0].properties.DAUID) {
+          var style = [
+            "match",
+            ["get", "DAUID"],
+            [features[0].properties.DAUID],
+            "#f1c500",
+            'transparent'
+          ]
+          console.log(features[0].properties.DAUID)
+          map.setPaintProperty('gtha-da-2021', 'fill-color', style)
+          ctuid = features[0].properties.DAUID
+        } else {
+          map.setPaintProperty('gtha-da-2021', 'fill-color', 'transparent')
+          ctuid = 0
+        }
 
       popup.on('close', () => {
         map.setPaintProperty('gtha-da-2021', 'fill-color', 'transparent')})
