@@ -4,11 +4,15 @@
   import './styles.css';
   import logo from './assets/top-logo-full.svg';
 
+  import colours from './lib/colours.json';
+
   import { onMount } from 'svelte'
   import mapboxgl from "mapbox-gl";
 
   mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xhYjg0ZTl3MDIydDN3b3MzZmV4dXIydSJ9.lR7rnaKdBdTNGcc2kGDPbQ';
   
+  console.log(colours);
+
   let map;
   
   let pageWidth;
@@ -112,7 +116,6 @@
             "#f1c500",
             'transparent'
           ]
-          console.log(features[0].properties.DAUID)
           map.setPaintProperty('gtha-da-2021', 'fill-color', style)
           ctuid = features[0].properties.DAUID
         } else {
@@ -156,7 +159,6 @@
         if (normalize(feature).includes(value) && value!='' && added_languages.includes(feature)==false) {
         filtered.push(feature);
         }
-        //console.log(filtered)
         }
         //SORT HERE
         const sortBySubstring = (words, match) => {
@@ -253,7 +255,6 @@
     const empty = document.createElement('p');
     // Clear any existing listings
     listingEl.innerHTML = '';
-    console.log(features)
     for (const feature of features) {
     const itemLink = document.createElement('a');
     const label = `${feature}`;
@@ -279,7 +280,6 @@
       added_languages.push(feature)
       renderListings([]);
       document.getElementById('feature-filter').value=''
-      //console.log(added_languages)
       const link = document.createElement('a');
       link.id = feature;
       link.href = '#';
@@ -323,7 +323,6 @@
           getlink.onclick = function (e) {
 
             added_languages.splice(added_languages.indexOf(id), 1)
-            console.log(added_languages)
             const clickedLayer = this.textContent.substring(1); //2
             e.preventDefault();
             e.stopPropagation();
