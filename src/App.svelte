@@ -68,6 +68,7 @@
       "data": "data/rand_points_spoken_languages_GTA_no_water_final2.geojson"
       });
 
+
       languagelist.forEach((feature) => {
         map.addLayer({
         "id": feature,
