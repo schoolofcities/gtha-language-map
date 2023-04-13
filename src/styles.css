@@ -91,14 +91,16 @@ main {
     font-size: 13px;
     margin-left: 0px;
     margin-right: 4px;
+    margin-bottom: 4px;
     border: 1px solid var(--brandGray);
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: #efefef;
-    padding-left: 5px;
+    padding-left: 1px;
     padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    white-space: nowrap;
+    /* padding-top: 2px;
+    padding-bottom: 2px; */
+    display: inline-block;
+    white-space: nowrap; 
 }
 
 #menu a:hover {
@@ -124,6 +126,7 @@ main {
     width: 300px;
     align-content: left;
     text-align: left;
+    padding-bottom: 10px;
     margin-bottom: -7px;
     white-space: nowrap;
     overflow-x: scroll;
