@@ -11,7 +11,7 @@
 
   mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xhYjg0ZTl3MDIydDN3b3MzZmV4dXIydSJ9.lR7rnaKdBdTNGcc2kGDPbQ';
   
-  console.log(colours);
+  console.log(colours["Mandarin"])
 
   let map;
   
@@ -69,15 +69,15 @@
           'match',
           ['get', 'Language'],
           feature,
-          colorlist[languagelist.indexOf(feature)],
+          colours[feature],
           '#ccc'
         ],
-        "circle-opacity": 0.6,
+        "circle-opacity": 0.25,
         "circle-color": [
           'match',
           ['get', 'Language'],
           feature,
-          colorlist[languagelist.indexOf(feature)],
+          colours[feature],
           '#ccc'
         ]
         }
@@ -181,7 +181,7 @@
 
         //const toggleableLayerIds1 = ['English', 'Mandarin', 'Cantonese', 'Punjabi', 'Spanish', 'Urdu', 'Italian', 'Tagalog', 'Tamil', 'Arabic', 'Portuguese','Iranian-Persian', 'Russian', 'French', 'Gujarati', 'Polish', 'Hindi', 'Korean', 'Vietnamese', 'Bengali', 'Greek', 'German', 'Ukrainian', 'Serbian', 'Dari', 'Romanian', 'Malayalam', 'Croatian', 'Turkish', 'Hungarian', 'Telugu', 'Other'];
         for (const id of languagelist){
-        if (id ==='Spanish' || id ==='Mandarin' || id ==='Yue (Cantonese)' || id==='Punjabi (Panjabi)') {
+        if (id ==='Spanish' || id ==='Mandarin' || id==='Punjabi (Panjabi)') {
         added_languages.push(id)
         const link = document.createElement('a');
         link.id = id;
@@ -191,16 +191,16 @@
         const clickedLayer = id;
         map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
         
-        if (id == 'Yue (Cantonese)'){
-        document.getElementById("color1").style.fill = colorlist[languagelist.indexOf('Yue (Cantonese)')]
-        var img = document.getElementById("circle1");
-        var newimg3 = img.cloneNode(true);
-        link.appendChild(newimg3);
-        link.insertAdjacentText('beforeend', ` ${id}`);
-        }
+        // if (id == 'Yue (Cantonese)'){
+        // document.getElementById("color1").style.fill = colorlist[languagelist.indexOf('Yue (Cantonese)')]
+        // var img = document.getElementById("circle1");
+        // var newimg3 = img.cloneNode(true);
+        // link.appendChild(newimg3);
+        // link.insertAdjacentText('beforeend', ` ${id}`);
+        // }
 
         if (id == 'Punjabi (Panjabi)'){
-        document.getElementById("color1").style.fill = colorlist[languagelist.indexOf('Punjabi (Panjabi)')]
+        document.getElementById("color1").style.fill = colours['Punjabi (Panjabi)']
         var img = document.getElementById("circle1");
         var newimg21 = img.cloneNode(true);
         link.appendChild(newimg21);
@@ -208,7 +208,7 @@
         }
 
         if (id == 'Spanish'){
-        document.getElementById("color1").style.fill = colorlist[languagelist.indexOf('Spanish')]
+        document.getElementById("color1").style.fill = colours['Spanish']
         var img = document.getElementById("circle1");
         var newimg25 = img.cloneNode(true);
         link.appendChild(newimg25);
@@ -216,7 +216,7 @@
         }
 
         if (id == 'Mandarin'){
-        document.getElementById("color1").style.fill = colorlist[languagelist.indexOf('Mandarin')]
+        document.getElementById("color1").style.fill = colours['Mandarin']
         var img = document.getElementById("circle1");
         var newimg17 = img.cloneNode(true);
         link.appendChild(newimg17);
@@ -296,7 +296,7 @@
     
     const layers = document.getElementById('menu');
     layers.appendChild(link);
-    document.getElementById("color1").style.fill = colorlist[languagelist.indexOf(feature)]
+    document.getElementById("color1").style.fill = colours[feature]
     var img = document.getElementById("circle1");
     var newimg = img.cloneNode(true);
     link.appendChild(newimg);

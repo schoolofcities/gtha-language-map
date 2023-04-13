@@ -115,7 +115,7 @@ main {
     margin-bottom: 5px;
     width: 285px;
     border: 1px solid var(--brandGray);
-    border-radius: 15px;
+    border-radius: 5px;
     padding-left: 10px;
 }
 
