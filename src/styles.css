@@ -109,14 +109,16 @@ main {
 }
 
 #feature-filter {
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
     height: 22px;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-right: 11px;
     margin-bottom: 5px;
     width: 285px;
     border: 1px solid var(--brandGray);
     border-radius: 5px;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 #feature-listing {
@@ -129,7 +131,9 @@ main {
     padding-bottom: 10px;
     margin-bottom: -7px;
     white-space: nowrap;
-    overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y:hidden;
+    white-space: nowrap;
 }
 
 #feature-listing a {
@@ -140,7 +144,7 @@ main {
     margin-left: 2px;
     margin-right: 2px;
     border: 1px solid var(--brandGray);
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: var(--brandWhite);
     padding-left: 5px;
     padding-right: 5px;
