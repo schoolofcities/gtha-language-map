@@ -38,7 +38,7 @@ main {
     bottom: 0; 
     right: 0; 
     left: 320px; 
-    width: 100%; 
+    width: calc(100% - 319px); 
 }
 
 #panel {

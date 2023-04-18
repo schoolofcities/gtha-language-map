@@ -44,6 +44,8 @@
     map.on('style.load', () => {
       map.setFog({}); 
     });
+
+    map.addControl(new mapboxgl.NavigationControl(), 'top-left');
   
     map.on('load', () => {
       
