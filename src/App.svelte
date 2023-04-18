@@ -23,9 +23,7 @@
 	];
 
   let ctuid = 0
-  let languagelist = ['Bosnian', 'Croatian', 'Dari', 'Iranian Persian', 'Odia', 'Serbian', 'Afrikaans', 'Assyrian Neo-Aramaic', 'Belarusian', 'Bengali', 'Bulgarian', 'Chaldean Neo-Aramaic', 'Czech', 'Danish', 'Dutch', 'German', 'Gujarati', 'Hindi', 'Kacchi', 'Konkani', 'Kurdish', 'Latvian', 'Lithuanian', 'Macedonian', 'Marathi', 'Nepali', 'Norwegian', 'Pashto', 'Polish', 'Punjabi (Panjabi)', 'Russian', 'Serbo-Croatian', 'Sindhi', 'Sinhala (Sinhalese)', 'Slovak', 'Slovene (Slovenian)', 'Swedish', 'Ukrainian', 'Urdu', 'Yiddish', 'Amharic', 'Arabic', 'Hakka', 'Harari', 'Hausa', 'Hebrew', 'Irish', 'Italian', 'Maltese', 'Mandarin', 'Min Dong', 'Min Nan (Chaochow, Teochow, Fukien, Taiwanese)', 'Oromo', 'Portuguese', 'Romanian', 'Somali', 'Spanish', 'Tibetan', 'Tigrigna', 'Wu (Shanghainese)', 'Yue (Cantonese)', 'Akan (Twi)', 'Albanian', 'American Sign Language', 'Armenian', 'Azerbaijani', 'Cebuano', 'Coptic', 'Edo', 'Estonian', 'Finnish', 'Ga', 'Ganda', 'Greek', 'Haitian Creole', 'Hiligaynon', 'Hungarian', 'Igbo', 'Ilocano', 'Indonesian', 'Jamaican English Creole', 'Kannada', 'Khmer (Cambodian)', 'Lao', 'Lingala', 'Malay', 'Malayalam', 'Morisyen', 'Pampangan (Kapampangan, Pampango)', 'Rundi (Kirundi)', 'Shona', 'Swahili', 'Tagalog (Pilipino, Filipino)', 'Tamil', 'Telugu', 'Thai', 'Tulu', 'Turkish', 'Vietnamese', 'Yoruba', 'Georgian', 'Japanese', 'Korean', 'English', 'French', 'Other']
-
-
+  let languagelist = ['Bosnian', 'Croatian', 'Dari', 'Iranian Persian', 'Odia', 'Serbian', 'Afrikaans', 'Assyrian Neo-Aramaic', 'Belarusian', 'Bengali', 'Bulgarian', 'Chaldean Neo-Aramaic', 'Czech', 'Danish', 'Dutch', 'German', 'Gujarati', 'Hindi', 'Kacchi', 'Konkani', 'Kurdish', 'Latvian', 'Lithuanian', 'Macedonian', 'Marathi', 'Nepali', 'Norwegian', 'Pashto', 'Polish', 'Punjabi (Panjabi)', 'Russian', 'Serbo-Croatian', 'Sindhi', 'Sinhala (Sinhalese)', 'Slovak', 'Slovene (Slovenian)', 'Swedish', 'Ukrainian', 'Urdu', 'Yiddish', 'Amharic', 'Arabic', 'Hakka', 'Harari', 'Hausa', 'Hebrew', 'Irish', 'Italian', 'Maltese', 'Mandarin', 'Min Dong', 'Min Nan (Chaochow, Teochow, Fukien, Taiwanese)', 'Oromo', 'Portuguese', 'Romanian', 'Somali', 'Spanish', 'Tibetan', 'Tigrigna', 'Wu (Shanghainese)', 'Yue (Cantonese)', 'Akan (Twi)', 'Albanian', 'American Sign Language', 'Armenian', 'Azerbaijani', 'Cebuano', 'Coptic', 'Edo', 'Estonian', 'Finnish', 'Ga', 'Ganda', 'Greek', 'Haitian Creole', 'Hiligaynon', 'Hungarian', 'Igbo', 'Ilocano', 'Indonesian', 'Jamaican English Creole', 'Kannada', 'Khmer (Cambodian)', 'Lao', 'Lingala', 'Malay', 'Malayalam', 'Morisyen', 'Pampangan (Kapampangan, Pampango)', 'Rundi (Kirundi)', 'Shona', 'Swahili', 'Tagalog (Pilipino, Filipino)', 'Tamil', 'Telugu', 'Thai', 'Tulu', 'Turkish', 'Vietnamese', 'Yoruba', 'Georgian', 'Japanese', 'Korean', 'English', 'French', 'Other'].reverse()
 
   onMount(() => {
     map = new mapboxgl.Map({
@@ -178,54 +176,47 @@
         // passing an empty array to render an empty state
         renderListings([]);
         
-
-        //const toggleableLayerIds1 = ['English', 'Mandarin', 'Cantonese', 'Punjabi', 'Spanish', 'Urdu', 'Italian', 'Tagalog', 'Tamil', 'Arabic', 'Portuguese','Iranian-Persian', 'Russian', 'French', 'Gujarati', 'Polish', 'Hindi', 'Korean', 'Vietnamese', 'Bengali', 'Greek', 'German', 'Ukrainian', 'Serbian', 'Dari', 'Romanian', 'Malayalam', 'Croatian', 'Turkish', 'Hungarian', 'Telugu', 'Other'];
         for (const id of languagelist){
-        if (id ==='Italian' || id ==='Mandarin' || id==='Punjabi (Panjabi)') {
-        added_languages.push(id)
-        const link = document.createElement('a');
-        link.id = id;
-        link.href = '#';
-        //link.textContent = 'X '+id; //'X '+id;
-        link.className = 'active';
-        const clickedLayer = id;
-        map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-        
-        // if (id == 'Yue (Cantonese)'){
-        // document.getElementById("color1").style.fill = colorlist[languagelist.indexOf('Yue (Cantonese)')]
-        // var img = document.getElementById("circle1");
-        // var newimg3 = img.cloneNode(true);
-        // link.appendChild(newimg3);
-        // link.insertAdjacentText('beforeend', ` ${id}`);
-        // }
+          if (id ==='Italian' || id ==='Mandarin' || id==='Punjabi (Panjabi)') {
+          added_languages.push(id)
+          const link = document.createElement('a');
+          link.id = id;
+          link.href = '#';
+          //link.textContent = 'X '+id; //'X '+id;
+          link.className = 'active';
+          const clickedLayer = id;
+          map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
 
-        if (id == 'Punjabi (Panjabi)'){
-        document.getElementById("color1").style.fill = colours['Punjabi (Panjabi)']
-        var img = document.getElementById("circle1");
-        var newimg21 = img.cloneNode(true);
-        link.appendChild(newimg21);
-        link.insertAdjacentText('beforeend', ` ${id}`);
-        }
+          if (id == 'Punjabi (Panjabi)'){
+          document.getElementById("color1").style.fill = colours['Punjabi (Panjabi)']
+          document.getElementById("color1").style.stroke = colours['Punjabi (Panjabi)']
+          var img = document.getElementById("circle1");
+          var newimg21 = img.cloneNode(true);
+          link.appendChild(newimg21);
+          link.insertAdjacentText('beforeend', ` ${id}`);
+          }
 
-        if (id == 'Italian'){
-        document.getElementById("color1").style.fill = colours['Italian']
-        var img = document.getElementById("circle1");
-        var newimg25 = img.cloneNode(true);
-        link.appendChild(newimg25);
-        link.insertAdjacentText('beforeend', ` ${id}`);
-        }
+          if (id == 'Italian'){
+          document.getElementById("color1").style.fill = colours['Italian']
+          document.getElementById("color1").style.stroke = colours['Italian']
+          var img = document.getElementById("circle1");
+          var newimg25 = img.cloneNode(true);
+          link.appendChild(newimg25);
+          link.insertAdjacentText('beforeend', ` ${id}`);
+          }
 
-        if (id == 'Mandarin'){
-        document.getElementById("color1").style.fill = colours['Mandarin']
-        var img = document.getElementById("circle1");
-        var newimg17 = img.cloneNode(true);
-        link.appendChild(newimg17);
-        link.insertAdjacentText('beforeend', ` ${id}`);
-        }
-        const layers = document.getElementById('menu');
-        layers.appendChild(link);
-        }
-      } 
+          if (id == 'Mandarin'){
+          document.getElementById("color1").style.fill = colours['Mandarin']
+          document.getElementById("color1").style.stroke = colours['Mandarin']
+          var img = document.getElementById("circle1");
+          var newimg17 = img.cloneNode(true);
+          link.appendChild(newimg17);
+          link.insertAdjacentText('beforeend', ` ${id}`);
+          }
+          const layers = document.getElementById('menu');
+          layers.appendChild(link);
+          }
+        } 
 
       languagelist.forEach((feature) => {
         map.setFilter(feature, ['==', 'Language', feature]);
@@ -296,13 +287,12 @@
     
     const layers = document.getElementById('menu');
     layers.appendChild(link);
-    document.getElementById("color1").style.fill = colours[feature]
+    document.getElementById("color1").style.fill = colours[feature];
+    document.getElementById("color1").style.stroke = colours[feature];
     var img = document.getElementById("circle1");
     var newimg = img.cloneNode(true);
     link.appendChild(newimg);
     link.insertAdjacentText('beforeend', ` ${feature}`);
-
-
   }
 
     
@@ -348,7 +338,7 @@
 <main>
 
   <svg id="circle1" height="14" width="14">
-    <circle id="color1" cx="8" cy="8" r="5" stroke="black" stroke-width="0.5" fill="#ffffff" />
+    <circle id="color1" cx="8" cy="8" r="5" stroke="black" stroke-width="1.5" fill="#ffffff" />
   </svg>
 
   <div id="panel">
@@ -379,7 +369,7 @@
 
     <div id="info">
       <p>
-        This map uses the <em>Knowledge of languages</em> 25% sample data from Statistics Canada's 2021 census. <!-- Data sources, Github, etc. -->
+        This map uses the <em>Knowledge of languages</em> 25% sample data from Statistics Canada's 2021 census.
       </p>
     </div>
 

@@ -88,6 +88,7 @@ main {
 #menu a {
     color: var(--brandBlack);
     font-weight: normal;
+    font-family: Roboto, sans-serif;
     font-size: 13px;
     margin-left: 0px;
     margin-right: 4px;
@@ -108,6 +109,11 @@ main {
     background-color: white;
 }
 
+#circle1 {
+    fill-opacity: 0.5;
+    stroke-width: 25px;
+}
+
 #feature-filter {
     font-family: Roboto, sans-serif;
     font-size: 13px;
@@ -124,23 +130,24 @@ main {
 #feature-listing {
     margin-left: 7px;
     overflow-x:hidden;
-    height: 27px;
+    min-height: 75px;
     width: 300px;
     align-content: left;
     text-align: left;
     padding-bottom: 10px;
     margin-bottom: -7px;
-    white-space: nowrap;
-    overflow-x: auto;
+    /* white-space: nowrap; */
+    /* overflow-x: auto;
     overflow-y:hidden;
-    white-space: nowrap;
+    white-space: nowrap; */
 }
 
 #feature-listing a {
     color: var(--brandBlack);
     font-weight: normal;
     height: 18px;
-    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
     margin-left: 2px;
     margin-right: 2px;
     border: 1px solid var(--brandGray);
@@ -148,10 +155,11 @@ main {
     background-color: var(--brandWhite);
     padding-left: 5px;
     padding-right: 5px;
-    padding-top: 3px;
+    padding-top: 0px;
     padding-bottom: 3px;
+    display: inline-block;
+    white-space: nowrap; 
     cursor: pointer;
-    
 }
 
 #feature-listing a:hover {
@@ -160,7 +168,7 @@ main {
 
 #info {
     margin: 10px;
-    margin-top: 15px;
+    margin-top: 1px;
     text-align: left;
     border-top: 1px solid var(--brandGray);
     border-bottom: 1px solid var(--brandGray);
@@ -169,11 +177,12 @@ main {
 #info p {
     margin: 0px;
     padding: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: var(--brandBlack);
     font-weight: normal;
-    font-size: 12px;
+    line-height: 14px;
+    font-size: 11px;
     opacity: 0.85;
 }
 #legend {
@@ -185,7 +194,6 @@ main {
     font-size: 12px;
     opacity: 0.85;
 }
-
 
 #logo {
     margin: auto;
