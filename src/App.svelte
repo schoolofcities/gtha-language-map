@@ -181,7 +181,7 @@
 
         //const toggleableLayerIds1 = ['English', 'Mandarin', 'Cantonese', 'Punjabi', 'Spanish', 'Urdu', 'Italian', 'Tagalog', 'Tamil', 'Arabic', 'Portuguese','Iranian-Persian', 'Russian', 'French', 'Gujarati', 'Polish', 'Hindi', 'Korean', 'Vietnamese', 'Bengali', 'Greek', 'German', 'Ukrainian', 'Serbian', 'Dari', 'Romanian', 'Malayalam', 'Croatian', 'Turkish', 'Hungarian', 'Telugu', 'Other'];
         for (const id of languagelist){
-        if (id ==='Spanish' || id ==='Mandarin' || id==='Punjabi (Panjabi)') {
+        if (id ==='Italian' || id ==='Mandarin' || id==='Punjabi (Panjabi)') {
         added_languages.push(id)
         const link = document.createElement('a');
         link.id = id;
@@ -207,8 +207,8 @@
         link.insertAdjacentText('beforeend', ` ${id}`);
         }
 
-        if (id == 'Spanish'){
-        document.getElementById("color1").style.fill = colours['Spanish']
+        if (id == 'Italian'){
+        document.getElementById("color1").style.fill = colours['Italian']
         var img = document.getElementById("circle1");
         var newimg25 = img.cloneNode(true);
         link.appendChild(newimg25);
