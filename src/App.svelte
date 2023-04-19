@@ -29,7 +29,7 @@
     map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/schoolofcities/clddge3j0006q01o7fi0p3xyq',
-      center: [-79.32, 43.775], 
+      center: [-79.40, 43.78], 
 			zoom: 10,
 			maxZoom: 13.5,
 			minZoom: 2,
@@ -167,7 +167,7 @@
 
         const result = sortBySubstring(filtered, e.target.value);
         // Populate the sidebar with filtered results
-        renderListings(result.slice(0,5));
+        renderListings(result.slice(0,6));
         //renderListings(filtered);
         
         });
@@ -349,18 +349,6 @@
       <h1>Knowledge of Languages in the Greater Toronto & Hamilton Area.</h1>
     </div>
 
-    <div id="info">
-      <div id='legend'>
-        <svg height="74" width="300">
-          <circle cx="33" cy="40" r="32" stroke="gray" stroke-width="1" fill="white" fill-opacity="0.1" />
-          <circle cx="33" cy="61" r="10" stroke="gray" stroke-width="1" fill="white" fill-opacity="0.1" />
-          <line x1="50" y1="9" x2="80" y2="9" stroke="black" stroke-dasharray="4 1 4 1" />
-          <line x1="44" y1="51" x2="80" y2="51" stroke="black" stroke-dasharray="4 1 4 1"/>
-          <text x="82" y="17" class="svg-text">5,000 speakers</text>
-          <text x="82" y="59" class="svg-text">500 speakers</text>
-        </svg>
-      </div>
-    </div>
 
     <nav id="menu">
     </nav>
@@ -369,11 +357,24 @@
 
     <div id="feature-listing" class="listing"></div>
 
+
     <div id="info">
+      <div id='legend'>
+        <svg height="74" width="300">
+          <circle cx="33" cy="40" r="32" stroke="gray" stroke-width="1" fill="white" fill-opacity="0.1" />
+          <circle cx="33" cy="61" r="10" stroke="gray" stroke-width="1" fill="white" fill-opacity="0.1" />
+          <line x1="50" y1="9" x2="80" y2="9" stroke="black" stroke-dasharray="4 1 4 1" />
+          <line x1="44" y1="51" x2="80" y2="51" stroke="black" stroke-dasharray="4 1 4 1"/>
+          <text x="82" y="15" class="svg-text">5,000 speakers</text>
+          <text x="82" y="58" class="svg-text">500 speakers</text>
+        </svg>
+      </div>
       <p>
         This map uses the <em>Knowledge of languages</em> 25% sample data from Statistics Canada's 2021 census.
         <br><br>
-        The size of each dot represents the number of speakers within a census Dissemination Area (DA). Click on the dot to show the count and DA boundary.
+        The size of each dot on the map represents the number of speakers within a census Dissemination Area (DA). Click on a dot to show the count and DA boundary.
+        <br><br>
+        This map was built by <a href="https://www.linkedin.com/in/anamariazamrii/">Ana-Maria Zamrii</a> and <a href = "http://jamaps.github.io/">Jeff Allen</a>. Code and data are on <a href="">GitHub</a>.
       </p>
     </div>
 

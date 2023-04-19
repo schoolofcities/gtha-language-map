@@ -32,6 +32,14 @@ main {
     padding: 0; 
 }
 
+a {
+    color: var(--brandMedBlue);
+}
+a:hover {
+    color: var(--brandDarkBlue);
+}
+
+
 #map { 
     position: fixed; 
     top: 0; 
@@ -145,10 +153,6 @@ main {
     text-align: left;
     padding-bottom: 10px;
     margin-bottom: -7px;
-    /* white-space: nowrap; */
-    /* overflow-x: auto;
-    overflow-y:hidden;
-    white-space: nowrap; */
 }
 
 #feature-listing a {
@@ -200,7 +204,7 @@ main {
 }
 .svg-text {
     font-weight: normal;
-    font-size: 12px;
+    font-size: 11px;
     opacity: 0.85;
 }
 
