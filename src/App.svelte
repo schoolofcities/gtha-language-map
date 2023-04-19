@@ -99,7 +99,6 @@
         const language = e.features[0].properties.Language.trim();
         const speaker = e.features[0].properties.Speaker_No.toString();
         dauid = e.features[0].properties.DAUID;
-        console.log(dauid);
 
         // // Ensure that if the map is zoomed out such that multiple
         // // copies of the feature are visible, the popup appears
@@ -110,23 +109,44 @@
 
         let popup = new mapboxgl.Popup()
           .setLngLat(coordinates)
-          .setHTML(language + ',\n' + speaker)
+          .setHTML("<b>" + speaker + "</b> " + language + " Speakers")
           .addTo(map);
 
-        // var features = map.queryRenderedFeatures(e.point, { layers: ['gtha-da-2021'] });
-        var style = [
+        map.setFilter('gtha-da-2021',[
+          "all",
+          [
             "match",
             ["get", "DAUID"],
-            dauid.toString(),
-            "#000000",
-            '#ffffff'
+            [dauid.toString()],
+            true,
+            false
           ]
-        map.setPaintProperty('gtha-da-2021', 'fill-outline-color', style)
-          
+        ]);
+
+        console.log(dauid);
+
+        // var features = map.queryRenderedFeatures(e.point, { layers: ['gtha-da-2021'] });
+        // var style = [
+        //     "match",
+        //     ["get", "DAUID"],
+        //     dauid.toString(),
+        //     "#000000",
+        //     '#ffffff'
+        //   ]
+        // map.setPaintProperty('gtha-da-2021', 'fill-color', style) 
         
         popup.on('close', () => {
-          console.log("meow");
           dauid = 0;
+          map.setFilter('gtha-da-2021',[
+          "all",
+          [
+            "match",
+            ["get", "DAUID"],
+            [dauid.toString()],
+            true,
+            false
+          ]
+        ]);
         })
         
       });
@@ -235,6 +255,7 @@
     });
 
   });
+
 
 
 

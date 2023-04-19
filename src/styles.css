@@ -242,3 +242,14 @@ p {
     cursor: pointer;
 }
 
+.mapboxgl-popup-content {
+    padding: 5px;
+    padding-right: 28px;
+    border: solid 1px var(--brandGray);
+}
+/* .mapboxgl-popup-tip {
+    border-color: black;
+} */
+.mapboxgl-popup-close-button {
+    padding: 8px;
+}
