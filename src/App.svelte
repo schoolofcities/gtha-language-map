@@ -394,9 +394,3 @@
 
 
 </main>
-
-
-
-<style>
-
-</style>
