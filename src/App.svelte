@@ -12,6 +12,8 @@
   mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xhYjg0ZTl3MDIydDN3b3MzZmV4dXIydSJ9.lR7rnaKdBdTNGcc2kGDPbQ';
   
   let map;
+
+  let dauid = 0;
   
   let pageWidth;
 
@@ -86,71 +88,68 @@
       });
     });
 
-  
+    
+    
       
-      // When a click event occurs on a feature in the places layer, open a popup at the
-      // location of the feature, with description HTML from its properties.
-      for (const id of languagelist) {
+    for (const id of languagelist) {
       map.on('click', id, (e) => {
-      // Copy coordinates array.
-      const coordinates = e.features[0].geometry.coordinates.slice();
-      const language = e.features[0].properties.Language.trim();
-      const speaker = e.features[0].properties.Speaker_No.toString();
-      
-      // Ensure that if the map is zoomed out such that multiple
-      // copies of the feature are visible, the popup appears
-      // over the copy being pointed to.
-      while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-      }
-      
-      let popup=new mapboxgl.Popup()
-      .setLngLat(coordinates)
-      .setHTML(language + ',\n' +speaker)
-      .addTo(map);
 
-      var features = map.queryRenderedFeatures(e.point, {layers:['gtha-da-2021']});
-        if (ctuid != features[0].properties.DAUID) {
-          var style = [
+        // base grab info
+        const coordinates = e.features[0].geometry.coordinates.slice();
+        const language = e.features[0].properties.Language.trim();
+        const speaker = e.features[0].properties.Speaker_No.toString();
+        dauid = e.features[0].properties.DAUID;
+        console.log(dauid);
+
+        // // Ensure that if the map is zoomed out such that multiple
+        // // copies of the feature are visible, the popup appears
+        // // over the copy being pointed to.
+        // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+        //   coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        // }
+
+        let popup = new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML(language + ',\n' + speaker)
+          .addTo(map);
+
+        // var features = map.queryRenderedFeatures(e.point, { layers: ['gtha-da-2021'] });
+        var style = [
             "match",
             ["get", "DAUID"],
-            [features[0].properties.DAUID],
-            "#f1c500",
-            'transparent'
+            dauid.toString(),
+            "#000000",
+            '#ffffff'
           ]
-          map.setPaintProperty('gtha-da-2021', 'fill-color', style)
-          ctuid = features[0].properties.DAUID
-        } else {
-          map.setPaintProperty('gtha-da-2021', 'fill-color', 'transparent')
-          ctuid = 0
-        }
-
-      popup.on('close', () => {
-        map.setPaintProperty('gtha-da-2021', 'fill-color', 'transparent')})
-        ctuid = 0
+        map.setPaintProperty('gtha-da-2021', 'fill-outline-color', style)
+          
+        
+        popup.on('close', () => {
+          console.log("meow");
+          dauid = 0;
+        })
+        
       });
-
 
       // Change the cursor to a pointer when the mouse is over the places layer.
       map.on('mouseenter', id, () => {
-      map.getCanvas().style.cursor = 'pointer';
+        map.getCanvas().style.cursor = 'pointer';
       });
-      
+
       // Change it back to a pointer when it leaves.
       map.on('mouseleave', id, () => {
-      map.getCanvas().style.cursor = '';
+        map.getCanvas().style.cursor = '';
       });
-      }
+    }
 
-      const layers = [
-      '500',
-      '1000'
-        ];
-      const sizes = [
-        '28px',
-        '63px'
-        ];
+      
   
+
+
+
+
+
+
         filterEl.addEventListener('keyup', (e) => {
         const value = normalize(e.target.value);
         
@@ -228,8 +227,6 @@
      
     });
     
-    
-
     map.on('idle', () => {
       languagelist.forEach((feature) => {
       if (!map.getLayer(feature)){
