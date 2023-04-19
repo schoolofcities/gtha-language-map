@@ -43,7 +43,11 @@
       map.setFog({}); 
     });
 
-    map.addControl(new mapboxgl.NavigationControl(), 'top-left');
+    map.addControl(new mapboxgl.NavigationControl({showZoom: false}), 'top-right');
+
+    map.addControl(new mapboxgl.NavigationControl({showCompass: false}), 'top-left');
+
+    map.addControl(new mapboxgl.ScaleControl(), 'bottom-right');
   
     map.on('load', () => {
       
