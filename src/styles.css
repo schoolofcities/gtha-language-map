@@ -42,7 +42,10 @@ main {
 }
 
 #panel {
-    background-color: var(--brandWhite);
+    background-color: #ffffff;
+    opacity: 0.8;
+    background-size: 4px 4px;
+    background-image: repeating-linear-gradient(45deg, #f3f3f3 0, #f3f3f3 0.4px, #ffffff 0, #ffffff 50%);
     position: fixed; 
     top: 0; 
     bottom: 0; 
@@ -50,35 +53,41 @@ main {
     left: 0; 
     width: 319px;
     border-right: 1px solid var(--brandGray);
+   
 }
 
 
-
 #title {
-    height: 102px;
+    height: 103px;
     margin: 10px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     padding: 0px;
-    background-color: var(--brandWhite);
-    border-top: 1px solid var(--brandGray);
-    border-bottom: 1px solid var(--brandGray);
-    border-radius: 3px;
+    background-color: #1E3765;
+    background-size: 4px 4px;
+    background-image: repeating-linear-gradient(45deg, #0D534D 0, #0D534D 0.4px, #1E3765 0, #1E3765 50%);
+    /* border-top: 1px solid var(--brandGray); */
+    /* border-bottom: 1px solid var(--brandGray); */
+    border: solid 1px var(--brandDarkBlue);
+    border-radius: 10px;
+    
 }
 
 #title h1 {
     font-size: 25px;
     margin: 0px;
     padding: 10px;
-    color: var(--brandBlack);
+    padding-left: 12px;
+    color: var(--brandWhite);
     font-family: TradeGothicBold, san-serif;
+    text-align: left;
 }
 
 #menu {
     padding: 3px;
     align-content: left;
     text-align: left;
-    min-height: 24px;
+    min-height: 30px;
     margin: 7px;
     width: 293px; 
     background-color: var(--brandWhite);
@@ -172,7 +181,7 @@ main {
     text-align: left;
     border-top: 1px solid var(--brandGray);
     border-bottom: 1px solid var(--brandGray);
-    border-radius: 3px;
+    border-radius: 0px;
 }
 #info p {
     margin: 0px;

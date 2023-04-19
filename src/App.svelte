@@ -330,6 +330,7 @@
     
   });
 
+
 </script>
 
 
@@ -338,13 +339,27 @@
 <main>
 
   <svg id="circle1" height="14" width="14">
-    <circle id="color1" cx="8" cy="8" r="5" stroke="black" stroke-width="1.5" fill="#ffffff" />
+    <circle id="color1" cx="8" cy="8" r="5" stroke="black" stroke-width="1.5"  />
   </svg>
+
 
   <div id="panel">
 
     <div id="title">
-      <h1>Knowledge of Languages in the Greater Toronto & Hamilton Area</h1>
+      <h1>Knowledge of Languages in the Greater Toronto & Hamilton Area.</h1>
+    </div>
+
+    <div id="info">
+      <div id='legend'>
+        <svg height="74" width="300">
+          <circle cx="33" cy="40" r="32" stroke="gray" stroke-width="1" fill="white" fill-opacity="0.1" />
+          <circle cx="33" cy="61" r="10" stroke="gray" stroke-width="1" fill="white" fill-opacity="0.1" />
+          <line x1="50" y1="9" x2="80" y2="9" stroke="black" stroke-dasharray="4 1 4 1" />
+          <line x1="44" y1="51" x2="80" y2="51" stroke="black" stroke-dasharray="4 1 4 1"/>
+          <text x="82" y="17" class="svg-text">5,000 speakers</text>
+          <text x="82" y="59" class="svg-text">500 speakers</text>
+        </svg>
+      </div>
     </div>
 
     <nav id="menu">
@@ -353,23 +368,12 @@
     <input id="feature-filter" type="text" placeholder="Search For Languages (Click Above To Remove)">
 
     <div id="feature-listing" class="listing"></div>
-    
-    <div id="info">
-      <div id='legend'>
-        <svg height="74" width="200">
-          <circle cx="50" cy="40" r="32" stroke="black" stroke-width="1" fill="white" />
-          <circle cx="50" cy="61" r="10" stroke="black" stroke-width="1" fill="white" />
-          <line x1="65" y1="9" x2="100" y2="9" stroke="black" stroke-dasharray="4 1 4 1" />
-          <line x1="58" y1="51" x2="100" y2="51" stroke="black" stroke-dasharray="4 1 4 1"/>
-          <text x="102" y="17" class="svg-text">5,000 speakers</text>
-          <text x="102" y="59" class="svg-text">500 speakers</text>
-        </svg>
-      </div>
-    </div>
 
     <div id="info">
       <p>
         This map uses the <em>Knowledge of languages</em> 25% sample data from Statistics Canada's 2021 census.
+        <br><br>
+        The size of each dot represents the number of speakers within a census Dissemination Area (DA). Click on the dot to show the count and DA boundary.
       </p>
     </div>
 
@@ -381,6 +385,7 @@
 
   <div id="map">
   </div>
+
 
 </main>
 
