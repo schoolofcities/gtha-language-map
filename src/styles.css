@@ -181,26 +181,42 @@ a:hover {
 
 #info {
     margin: 10px;
-    margin-top: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
     text-align: left;
-    border-top: 1px solid var(--brandGray);
-    border-bottom: 1px solid var(--brandGray);
-    border-radius: 0px;
+    border-top: solid 1px var(--brandGray);
+    display: flex;
 }
-#info p {
+p {
     margin: 0px;
     padding: 0px;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 10px;
-    color: var(--brandBlack);
+    color: var(--brandDarkGray);
     font-weight: normal;
     line-height: 14px;
     font-size: 11px;
-    opacity: 0.85;
+    box-sizing: border-box;
+    flex: 1;
 }
+
+#after {
+    margin: 10px;
+    margin-top: -0px;
+    margin-bottom: 0px;
+    text-align: left;
+    /* border-top: 1px solid var(--brandGray); */
+    /* border-bottom: 1px solid var(--brandGray); */
+    border-radius: 0px;
+    position: relative;
+    border-bottom: solid 1px var(--brandGray);
+}
+
 #legend {
-    opacity: 0.85;
+    margin-right: auto;
     padding: 0px;
+    width: 155px;
 }
 .svg-text {
     font-weight: normal;
@@ -213,6 +229,7 @@ a:hover {
     max-width: 230px;
     margin-top: 5px;
     height: 45px;
+    
 }
 
 #logo img {

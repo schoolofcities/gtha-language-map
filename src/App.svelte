@@ -357,10 +357,14 @@
 
     <div id="feature-listing" class="listing"></div>
 
-
+    
     <div id="info">
+      
+      <p>The size of each dot on the map represents the number of speakers within a census Dissemination Area (DA). Click on a dot to show the count and DA boundary.
+      </p>
+
       <div id='legend'>
-        <svg height="74" width="300">
+        <svg height="74" width="155">
           <circle cx="33" cy="40" r="32" stroke="gray" stroke-width="1" fill="white" fill-opacity="0.1" />
           <circle cx="33" cy="61" r="10" stroke="gray" stroke-width="1" fill="white" fill-opacity="0.1" />
           <line x1="50" y1="9" x2="80" y2="9" stroke="black" stroke-dasharray="4 1 4 1" />
@@ -369,11 +373,12 @@
           <text x="82" y="58" class="svg-text">500 speakers</text>
         </svg>
       </div>
+    </div>
+
+    <div id="after">
       <p>
-        This map uses the <em>Knowledge of languages</em> 25% sample data from Statistics Canada's 2021 census.
-        <br><br>
-        The size of each dot on the map represents the number of speakers within a census Dissemination Area (DA). Click on a dot to show the count and DA boundary.
-        <br><br>
+        Data are from the 2021 Canadian Census, and pertain to the number of people who <a href="https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/Definition-eng.cfm?ID=pop054"></a>"can conduct a conversation in a language".
+      </p><p>
         This map was built by <a href="https://www.linkedin.com/in/anamariazamrii/">Ana-Maria Zamrii</a> and <a href = "http://jamaps.github.io/">Jeff Allen</a>. Code and data are on <a href="">GitHub</a>.
       </p>
     </div>
