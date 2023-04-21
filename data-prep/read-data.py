@@ -43,4 +43,4 @@ df = pd.concat(data_chunks)
 df = pd.pivot(df, index='ALT_GEO_CODE', columns='CHARACTERISTIC_NAME', values='C1_COUNT_TOTAL')
 
 # print the dataframe
-df.to_csv("da-languages-gtha-test.csv")
+df.to_csv("da-languages-gtha.csv")

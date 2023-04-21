@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 from shapely.geometry import Point
 import random
-import geopandas
+import geopandas as gpd
 
-df = pd.read_csv("da-languages-gtha-test.csv")
+df = pd.read_csv("da-languages-gtha.csv")
 
 language_keep_list=[]
 language_delete_list=[]
@@ -13,10 +13,10 @@ for j in range(len(df.columns)): #loops through all columns of df
     for i in range(len(df)): #loop through all rows of df
         if np.isnan(df.iloc[i, j])==False and df.iloc[i, j]>=10: #if the number of speakers for a given language in a given census tract is greater than 10, increase the "count" value by 1
             count=count+1
-    if count<10: #if the total number of census tracts having more than 10 speakers is less than 10, add language to a "delete" list
+    if count<1: #if the total number of census tracts having more than 10 speakers is less than 10, add language to a "delete" list
         #print("deleted", df.columns[j]) #optionally, uncomment to see languages being deleted
         language_delete_list.append(df.columns[j])
-    elif count>=10: #if the total number of census tracts having more than 10 speakers is greater than 10, add language to a "keep" list (and remove leading/trailing whitespace in its name)
+    elif count>=1: #if the total number of census tracts having more than 10 speakers is greater than 10, add language to a "keep" list (and remove leading/trailing whitespace in its name)
         language_keep_list.append((df.columns[j]).strip()) 
         df = df.rename(columns={df.columns[j]: (df.columns[j]).strip() }) #rename df columns for kept languages to remove leading/trailing whitespace
 
@@ -58,13 +58,34 @@ def gen_dot(polygon, number):
     while len(points) < number:
         pnt = Point(random.uniform(polygon.bounds[0], polygon.bounds[2]), random.uniform(polygon.bounds[1], polygon.bounds[3]))
         if (polygon.contains(pnt)==True):
-            points.append([pnt.x,pnt.y])
+            points.append([round(pnt.x,5),round(pnt.y,5)])
     return points
 
 
+gdf = gpd.read_file("gtha-da-2021.geojson")
+
+
+dots = []
+
 for index, row in df2.iterrows():
-    print(row["ALT_GEO_CODE"])
-    break
+    
+    dauid = str(int(row["ALT_GEO_CODE"]))
+
+    geom = gdf[gdf['DAUID'] == dauid].geometry[0]
+    
+    for column in df2.columns.tolist()[1:]:
+        if row[column] > 0:
+            
+            pt = gen_dot(geom, 1)
+            dots.append([dauid, column, row[column], pt[0]])
+
+
+points = [Point(xy) for xy in [d[3] for d in dots]]
+dots = gpd.GeoDataFrame(dots, columns=['d', 'l', 's', 'c'], geometry=points)
+dots.crs = 'EPSG:4326'
+dots = dots[['d','l','s','geometry']]
+dots.to_file('gtha-da-2021-langauge-dots.geojson', driver='GeoJSON')
+
 
 
 
