@@ -4,7 +4,6 @@
   import './styles.css';
   import logo from './assets/top-logo-full.svg';
 
-  import colours from './lib/colours.json';
   import languageTotalColours from './lib/language-colours-speakers.json';
 
   import { onMount } from 'svelte'
@@ -16,7 +15,6 @@
 
   let dauid = 0;
   
-  let pageWidth;
 
   let added_languages=[];
 
@@ -29,8 +27,7 @@
   let languagelist = languageTotalColours
     .filter(item => item.Speakers > 0)
     .map(item => item.Language);
-  // ['Bosnian', 'Croatian', 'Dari', 'Iranian Persian', 'Odia', 'Serbian', 'Afrikaans', 'Assyrian Neo-Aramaic', 'Belarusian', 'Bengali', 'Bulgarian', 'Chaldean Neo-Aramaic', 'Czech', 'Danish', 'Dutch', 'German', 'Gujarati', 'Hindi', 'Kacchi', 'Konkani', 'Kurdish', 'Latvian', 'Lithuanian', 'Macedonian', 'Marathi', 'Nepali', 'Norwegian', 'Pashto', 'Polish', 'Punjabi (Panjabi)', 'Russian', 'Serbo-Croatian', 'Sindhi', 'Sinhala (Sinhalese)', 'Slovak', 'Slovene (Slovenian)', 'Swedish', 'Ukrainian', 'Urdu', 'Yiddish', 'Amharic', 'Arabic', 'Hakka', 'Harari', 'Hausa', 'Hebrew', 'Irish', 'Italian', 'Maltese', 'Mandarin', 'Min Dong', 'Min Nan (Chaochow, Teochow, Fukien, Taiwanese)', 'Oromo', 'Portuguese', 'Romanian', 'Somali', 'Spanish', 'Tibetan', 'Tigrigna', 'Wu (Shanghainese)', 'Yue (Cantonese)', 'Akan (Twi)', 'Albanian', 'American Sign Language', 'Armenian', 'Azerbaijani', 'Cebuano', 'Coptic', 'Edo', 'Estonian', 'Finnish', 'Ga', 'Ganda', 'Greek', 'Haitian Creole', 'Hiligaynon', 'Hungarian', 'Igbo', 'Ilocano', 'Indonesian', 'Jamaican English Creole', 'Kannada', 'Khmer (Cambodian)', 'Lao', 'Lingala', 'Malay', 'Malayalam', 'Morisyen', 'Pampangan (Kapampangan, Pampango)', 'Rundi (Kirundi)', 'Shona', 'Swahili', 'Tagalog (Pilipino, Filipino)', 'Tamil', 'Telugu', 'Thai', 'Tulu', 'Turkish', 'Vietnamese', 'Yoruba', 'Georgian', 'Japanese', 'Korean', 'English', 'French', 'Other'].reverse()
-
+  
   onMount(() => {
     map = new mapboxgl.Map({
       container: 'map',
@@ -41,8 +38,7 @@
 			minZoom: 2,
 			bearing: -17.7,
 			maxBounds: maxBounds,
-      projection: 'globe',
-      bearing: -17.1
+      projection: 'globe'
     });
  
     map.on('style.load', () => {
@@ -216,8 +212,8 @@
           map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
 
           if (id == 'Punjabi (Panjabi)'){
-          document.getElementById("color1").style.fill = colours['Punjabi (Panjabi)']
-          document.getElementById("color1").style.stroke = colours['Punjabi (Panjabi)']
+          document.getElementById("color1").style.fill = languageTotalColours.find(item => item.Language === 'Punjabi (Panjabi)').Colour          
+          document.getElementById("color1").style.stroke = languageTotalColours.find(item => item.Language === 'Punjabi (Panjabi)').Colour
           var img = document.getElementById("circle1");
           var newimg21 = img.cloneNode(true);
           link.appendChild(newimg21);
@@ -225,8 +221,8 @@
           }
 
           if (id == 'Italian'){
-          document.getElementById("color1").style.fill = colours['Italian']
-          document.getElementById("color1").style.stroke = colours['Italian']
+          document.getElementById("color1").style.fill = languageTotalColours.find(item => item.Language === 'Italian').Colour
+          document.getElementById("color1").style.stroke = languageTotalColours.find(item => item.Language === 'Italian').Colour
           var img = document.getElementById("circle1");
           var newimg25 = img.cloneNode(true);
           link.appendChild(newimg25);
@@ -234,8 +230,8 @@
           }
 
           if (id == 'Mandarin'){
-          document.getElementById("color1").style.fill = colours['Mandarin']
-          document.getElementById("color1").style.stroke = colours['Mandarin']
+          document.getElementById("color1").style.fill = languageTotalColours.find(item => item.Language === 'Mandarin').Colour
+          document.getElementById("color1").style.stroke = languageTotalColours.find(item => item.Language === 'Mandarin').Colour
           var img = document.getElementById("circle1");
           var newimg17 = img.cloneNode(true);
           link.appendChild(newimg17);
@@ -369,7 +365,6 @@
     <circle id="color1" cx="8" cy="8" r="5" stroke="black" stroke-width="1.5"  />
   </svg>
 
-
   <div id="panel">
 
     <div id="title">
@@ -418,6 +413,5 @@
 
   <div id="map">
   </div>
-
 
 </main>
