@@ -1,1 +1,23 @@
-Serbo-Croatian 
+[out:json][timeout:200];
+(
+		  nwr[landuse~"grass|grassland|allotments|cemetery|meadow|orchard|greenfield|vineyard|village_green|forest|landfill"]({{bbox}});
+		  nwr[natural~"wood|forest|beach|scrub|fell|heath|moor|grassland"]({{bbox}});
+		  nwr[leisure~"park|nature|playground|garden|grass|pitch|common|dog_park"]({{bbox}});
+
+);
+(._;>;);
+out body qt;
+
+
+
+[out:json][timeout:200];
+(
+  nwr[landuse~"industrial|retail|commercial|construction|brownfield|railway"]({{bbox}});
+  nwr[aeroway~"aerodrome"]({{bbox}});
+  nwr[man_made~"wastewater_plant|water_works"]({{bbox}});
+  nwr[tourism~"zoo|theme_park"]({{bbox}});
+  nwr[amenity~"parking"]({{bbox}});
+
+);
+(._;>;);
+out body qt;

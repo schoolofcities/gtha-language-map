@@ -21,10 +21,6 @@ for j in range(len(df.columns)): #loops through all columns of df
         df = df.rename(columns={df.columns[j]: (df.columns[j]).strip() }) #rename df columns for kept languages to remove leading/trailing whitespace
 
 
-print(language_keep_list)
-print(language_delete_list)
-
-
 #Assuming the "df" created in cell 2 contains ALL languages as its characteristics (either mother tongues, most spoken languages, etc),
 #this cell creates a dataframe "df2" which limits the characteristics to a user-selected list of a desired few languages 
 #and adds an "other" column to account for all languages NOT included in the user's selected list
@@ -49,7 +45,6 @@ df2 = df[language_keep_list]
 df2.insert(len(language_keep_list), 'Other', other_list_total) 
 
 
-print(df2)
 
 
 #defines function which creates a user-selected "number" of random points in each polygon region for each desired language 
@@ -68,13 +63,16 @@ gdf = gpd.read_file("gtha-da-2021.geojson")
 dots = []
 
 for index, row in df2.iterrows():
+
+    
     
     dauid = str(int(row["ALT_GEO_CODE"]))
+    print(dauid)
 
-    geom = gdf[gdf['DAUID'] == dauid].geometry[0]
+    geom = gdf[gdf['DAUID'] == dauid].geometry.values[0]
     
     for column in df2.columns.tolist()[1:]:
-        if row[column] > 0:
+        if row[column] > 9:
             
             pt = gen_dot(geom, 1)
             dots.append([dauid, column, row[column], pt[0]])
