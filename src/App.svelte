@@ -5,6 +5,7 @@
   import logo from './assets/top-logo-full.svg';
 
   import colours from './lib/colours.json';
+  import languageTotalColours from './lib/language-colours-speakers.json';
 
   import { onMount } from 'svelte'
   import mapboxgl from "mapbox-gl";
@@ -25,7 +26,10 @@
 	];
 
   let ctuid = 0
-  let languagelist = ['Bosnian', 'Croatian', 'Dari', 'Iranian Persian', 'Odia', 'Serbian', 'Afrikaans', 'Assyrian Neo-Aramaic', 'Belarusian', 'Bengali', 'Bulgarian', 'Chaldean Neo-Aramaic', 'Czech', 'Danish', 'Dutch', 'German', 'Gujarati', 'Hindi', 'Kacchi', 'Konkani', 'Kurdish', 'Latvian', 'Lithuanian', 'Macedonian', 'Marathi', 'Nepali', 'Norwegian', 'Pashto', 'Polish', 'Punjabi (Panjabi)', 'Russian', 'Serbo-Croatian', 'Sindhi', 'Sinhala (Sinhalese)', 'Slovak', 'Slovene (Slovenian)', 'Swedish', 'Ukrainian', 'Urdu', 'Yiddish', 'Amharic', 'Arabic', 'Hakka', 'Harari', 'Hausa', 'Hebrew', 'Irish', 'Italian', 'Maltese', 'Mandarin', 'Min Dong', 'Min Nan (Chaochow, Teochow, Fukien, Taiwanese)', 'Oromo', 'Portuguese', 'Romanian', 'Somali', 'Spanish', 'Tibetan', 'Tigrigna', 'Wu (Shanghainese)', 'Yue (Cantonese)', 'Akan (Twi)', 'Albanian', 'American Sign Language', 'Armenian', 'Azerbaijani', 'Cebuano', 'Coptic', 'Edo', 'Estonian', 'Finnish', 'Ga', 'Ganda', 'Greek', 'Haitian Creole', 'Hiligaynon', 'Hungarian', 'Igbo', 'Ilocano', 'Indonesian', 'Jamaican English Creole', 'Kannada', 'Khmer (Cambodian)', 'Lao', 'Lingala', 'Malay', 'Malayalam', 'Morisyen', 'Pampangan (Kapampangan, Pampango)', 'Rundi (Kirundi)', 'Shona', 'Swahili', 'Tagalog (Pilipino, Filipino)', 'Tamil', 'Telugu', 'Thai', 'Tulu', 'Turkish', 'Vietnamese', 'Yoruba', 'Georgian', 'Japanese', 'Korean', 'English', 'French', 'Other'].reverse()
+  let languagelist = languageTotalColours
+    .filter(item => item.Speakers > 0)
+    .map(item => item.Language);
+  // ['Bosnian', 'Croatian', 'Dari', 'Iranian Persian', 'Odia', 'Serbian', 'Afrikaans', 'Assyrian Neo-Aramaic', 'Belarusian', 'Bengali', 'Bulgarian', 'Chaldean Neo-Aramaic', 'Czech', 'Danish', 'Dutch', 'German', 'Gujarati', 'Hindi', 'Kacchi', 'Konkani', 'Kurdish', 'Latvian', 'Lithuanian', 'Macedonian', 'Marathi', 'Nepali', 'Norwegian', 'Pashto', 'Polish', 'Punjabi (Panjabi)', 'Russian', 'Serbo-Croatian', 'Sindhi', 'Sinhala (Sinhalese)', 'Slovak', 'Slovene (Slovenian)', 'Swedish', 'Ukrainian', 'Urdu', 'Yiddish', 'Amharic', 'Arabic', 'Hakka', 'Harari', 'Hausa', 'Hebrew', 'Irish', 'Italian', 'Maltese', 'Mandarin', 'Min Dong', 'Min Nan (Chaochow, Teochow, Fukien, Taiwanese)', 'Oromo', 'Portuguese', 'Romanian', 'Somali', 'Spanish', 'Tibetan', 'Tigrigna', 'Wu (Shanghainese)', 'Yue (Cantonese)', 'Akan (Twi)', 'Albanian', 'American Sign Language', 'Armenian', 'Azerbaijani', 'Cebuano', 'Coptic', 'Edo', 'Estonian', 'Finnish', 'Ga', 'Ganda', 'Greek', 'Haitian Creole', 'Hiligaynon', 'Hungarian', 'Igbo', 'Ilocano', 'Indonesian', 'Jamaican English Creole', 'Kannada', 'Khmer (Cambodian)', 'Lao', 'Lingala', 'Malay', 'Malayalam', 'Morisyen', 'Pampangan (Kapampangan, Pampango)', 'Rundi (Kirundi)', 'Shona', 'Swahili', 'Tagalog (Pilipino, Filipino)', 'Tamil', 'Telugu', 'Thai', 'Tulu', 'Turkish', 'Vietnamese', 'Yoruba', 'Georgian', 'Japanese', 'Korean', 'English', 'French', 'Other'].reverse()
 
   onMount(() => {
     map = new mapboxgl.Map({
@@ -55,10 +59,11 @@
       
       map.addSource("languages", {
         "type": "geojson",
-        "data": "data/rand_points_spoken_languages_GTA_no_water_final2.geojson"
+        "data": "data/gtha-da-2021-language-dots.geojson"
       });
 
       languagelist.forEach((feature) => {
+
         map.addLayer({
         "id": feature,
         "type": "circle",
@@ -67,21 +72,21 @@
             "visibility": "none"
         },
         "paint": {
-        "circle-radius": ['sqrt', ['/', ['get', 'Speaker_No'], 5]],
+        "circle-radius": ['sqrt', ['/', ['get', 's'], 5]],
         "circle-stroke-width": 1,
         "circle-stroke-color": [
           'match',
-          ['get', 'Language'],
+          ['get', 'l'],
           feature,
-          colours[feature],
+          languageTotalColours.find(item => item.Language === feature).Colour,
           '#ccc'
         ],
         "circle-opacity": 0.25,
         "circle-color": [
           'match',
-          ['get', 'Language'],
+          ['get', 'l'],
           feature,
-          colours[feature],
+          languageTotalColours.find(item => item.Language === feature).Colour,
           '#ccc'
         ]
         }
@@ -96,9 +101,9 @@
 
         // base grab info
         const coordinates = e.features[0].geometry.coordinates.slice();
-        const language = e.features[0].properties.Language.trim();
-        const speaker = e.features[0].properties.Speaker_No.toString();
-        dauid = e.features[0].properties.DAUID;
+        const language = e.features[0].properties.l.trim();
+        const speaker = e.features[0].properties.s.toString();
+        dauid = e.features[0].properties.d;
 
         // // Ensure that if the map is zoomed out such that multiple
         // // copies of the feature are visible, the popup appears
@@ -190,7 +195,7 @@
 
         const result = sortBySubstring(filtered, e.target.value);
         // Populate the sidebar with filtered results
-        renderListings(result.slice(0,6));
+        renderListings(result.slice(0,5));
         //renderListings(filtered);
         
         });
@@ -242,7 +247,7 @@
         } 
 
       languagelist.forEach((feature) => {
-        map.setFilter(feature, ['==', 'Language', feature]);
+        map.setFilter(feature, ['==', 'l', feature]);
       });
      
     });
@@ -309,8 +314,8 @@
     
     const layers = document.getElementById('menu');
     layers.appendChild(link);
-    document.getElementById("color1").style.fill = colours[feature];
-    document.getElementById("color1").style.stroke = colours[feature];
+    document.getElementById("color1").style.fill = languageTotalColours.find(item => item.Language === feature).Colour;
+    document.getElementById("color1").style.stroke = languageTotalColours.find(item => item.Language === feature).Colour;
     var img = document.getElementById("circle1");
     var newimg = img.cloneNode(true);
     link.appendChild(newimg);

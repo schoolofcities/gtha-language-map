@@ -1,0 +1,247 @@
+Language,Speakers,Colour
+Bosnian,3160,#002F6C
+Croatian,20260,#ff0000
+Dari,23215,#007A36
+Iranian Persian,89860,#239F40
+Odia,290,#8576b3
+"Oriya, n.o.s.",150,#000000
+"Persian (Farsi), n.o.s.",7600,#000000
+Serbian,24525,#6A0080
+"Serbo-Croatian, n.i.e.",125,#000000
+Afrikaans,1220,#FFB81C
+"Aramaic, n.o.s.",125,#000000
+Assamese,10,#000000
+Assyrian Neo-Aramaic,11565,#945cd4
+Baluchi,25,#000000
+Belarusian,180,#D22730
+Bengali,47810,#006A4E
+Bulgarian,2830,#00966E
+Chaldean Neo-Aramaic,2690,#6FC7EA
+Czech,1960,#11457E
+Danish,250,#C8102E
+Dutch,6940,#fc5d00
+German,47255,#DD0000
+Gujarati,96395,#e02000
+Hindi,336035,#FF671F
+Icelandic,0,#000000
+"Indo-Aryan languages, n.i.e.",1265,#000000
+Kacchi,3400,#004226
+"Karenic languages, n.i.e.",25,#000000
+Kashmiri,105,#000000
+Konkani,1820,#0b72cf
+Kurdish,3120,#FEBD11
+Latvian,380,#A4343A
+Lithuanian,1045,#046A38
+"Low German, n.o.s.",0,#000000
+Low Saxon,0,#000000
+Macedonian,8200,#D82126
+Marathi,11975,#ff9700
+Nepali,4915,#DC143C
+Norwegian,135,#BA0C2F
+Parsi,20,#000000
+Pashto,7810,#D32011
+Pennsylvania German,0,#000000
+Plautdietsch,0,#000000
+Polish,73975,#DC143C
+Punjabi (Panjabi),314305,#8DBF2E
+Rohingya,0,#000000
+Russian,105200,#1C3578
+Rusyn,25,#000000
+S'gaw Karen,205,#000000
+Sindhi,1650,#d8edcb
+Sinhala (Sinhalese),8230,#8D153A
+"Slavic languages, n.i.e.",10,#000000
+Slovak,1960,#94219b
+Slovene (Slovenian),1140,#3bb3aa
+Swedish,500,#006AA7
+Swiss German,60,#000000
+Ukrainian,31805,#0057B7
+Urdu,225885,#115740
+Vlaams (Flemish),20,#000000
+Yiddish,3890,#005EB8
+Amharic,9955,#078930
+Anicinabemowin (Algonquin),0,#000000
+Arabic,167535,#007A3D
+Atikamekw,0,#000000
+"Berber languages, n.i.e.",0,#000000
+Bilen,65,#000000
+Burmese,145,#000000
+Catalan,30,#000000
+"Celtic languages, n.i.e.",0,#000000
+"Chinese languages, n.i.e.",30,#000000
+"Chinese, n.o.s.",1155,#000000
+Cree languages,0,#000000
+"Cushitic languages, n.i.e.",20,#000000
+Dakelh (Carrier),0,#000000
+Dane-zaa (Beaver),0,#000000
+"Dene, n.o.s.",0,#000000
+Frisian,65,#000000
+Gwich'in,0,#000000
+Hakka,4050,#000095
+Harari,560,#DA121A
+Hausa,290,#1B7339
+Hebrew,35070,#005EB8
+"Indo-Iranian languages, n.i.e.",110,#000000
+Innu (Montagnais),0,#000000
+Irish,225,#009A44
+Italian,215100,#007FA3
+"Italic (Romance) languages, n.i.e.",105,#000000
+Kabyle,0,#000000
+Kuki-Chin languages,0,#000000
+"Malagasy, n.o.s.",0,#000000
+Maltese,1180,#C01B22
+Mandarin,376050,#DC4633
+Merina,0,#000000
+Mi'kmaq,0,#000000
+Min Dong,295,#002864
+"Min Nan (Chaochow, Teochow, Fukien, Taiwanese)",7765,#DC0000
+Mina,0,#000000
+Naskapi,0,#000000
+Oji-Cree,0,#000000
+Ojibway languages,105,#000000
+Oromo,605,#0645B1
+Portuguese,132505,#E42518
+Romanian,17035,#002B7F
+Scottish Gaelic,10,#000000
+"Semitic languages, n.i.e.",90,#000000
+Slavey-Hare languages,0,#000000
+Somali,17520,#4189DD
+Spanish,241520,#F1C500
+Tahltan languages,0,#000000
+Tamazight,0,#000000
+Tibetan,4430,#29166F
+"Tibeto-Burman languages, n.i.e.",80,#000000
+Tigrigna,6200,#E4002B
+Tlicho (Dogrib),0,#000000
+Tse'khene (Sekani),0,#000000
+Tsilhqot'in (Chilcotin),0,#000000
+Tsuu T'ina (Sarsi),0,#000000
+Tutchone languages,0,#000000
+Welsh,10,#000000
+Wetsuwet'en-Babine,0,#000000
+Wolastoqewi (Malecite),0,#000000
+Wu (Shanghainese),2220,#6c3bb1
+Yue (Cantonese),305015,#077662
+"African, n.o.s.",20,#000000
+Akan (Twi),9480,#009739
+Albanian,10060,#DA291C
+"Algonquian languages, n.i.e.",0,#000000
+American Sign Language,1580,#00A189
+Armenian,8625,#FF9E1B
+Assiniboine,0,#000000
+"Athabaskan languages, n.i.e.",0,#000000
+"Austro-Asiatic languages, n.i.e",0,#000000
+"Austronesian languages, n.i.e.",1400,#000000
+Azerbaijani,1970,#00AF66
+Bamanankan,0,#000000
+Bikol,115,#000000
+"Bisaya, n.o.s.",440,#000000
+Blackfoot,0,#000000
+Cayuga,10,#000000
+Cebuano,2610,#d1ab00
+Coptic,260,#C09300
+"Creole languages, n.i.e.",390,#000000
+"Creole, n.o.s.",2445,#000000
+Dakota,0,#000000
+Dinka,10,#000000
+"Dravidian languages, n.i.e.",0,#000000
+Edo,910,#005000
+Estonian,440,#0072CE
+Fijian,0,#000000
+Finnish,305,#002F6C
+"Fulah (Pular, Pulaar, Fulfulde)",0,#000000
+Ga,170,#EF3340
+Ganda,345,#D90000
+Gikuyu,50,#000000
+Gitxsan (Gitksan),0,#000000
+Greek,44250,#001489
+Haisla,0,#000000
+Haitian Creole,875,#D21034
+Halkomelem,0,#000000
+Heiltsuk,0,#000000
+Hiligaynon,1645,#b33000
+Hungarian,11165,#477050
+Igbo,1365,#e48cc6
+Ilocano,13305,#17643a
+Indonesian,1515,#ff0000
+Inuinnaqtun (Inuvialuktun),0,#000000
+Inuktitut,0,#000000
+"Inuktut (Inuit) languages, n.i.e.",0,#000000
+"Iroquoian languages, n.i.e.",0,#000000
+Jamaican English Creole,330,#009B3A
+Kankanaey,0,#000000
+Kannada,5240,#ff0000
+Kazakh,45,#000000
+Khmer (Cambodian),2045,#032EA1
+Kinaray-a,0,#000000
+Kinyarwanda (Rwanda),125,#000000
+Krio,20,#000000
+Kwak'wala (Kwakiutl),0,#000000
+Lao,1225,#CE1126
+Lillooet,0,#000000
+Lingala,610,#0085CA
+Luba-Kasai,0,#000000
+Malay,815,#0032A0
+Malayalam,18200,#CC0000
+Mohawk,0,#000000
+Morisyen,1265,#00A551
+Mwani,30,#000000
+Mòoré,0,#000000
+Ndebele,10,#000000
+"Niger-Congo languages, n.i.e.",2675,#000000
+"Nilo-Saharan languages, n.i.e.",180,#000000
+Nisga'a,0,#000000
+Ntlakapamux (Thompson),0,#000000
+Nuer,0,#000000
+Nuu-chah-nulth (Nootka),0,#000000
+Oneida,0,#000000
+"Pampangan (Kapampangan, Pampango)",460,#AB1368
+Pangasinan,125,#000000
+Quebec Sign Language,0,#000000
+Rundi (Kirundi),165,#1EB53A
+"Salish languages, n.i.e.",0,#000000
+Sango,30,#000000
+Secwepemctsin (Shuswap),0,#000000
+Shona,315,#009739
+"Sign languages, n.i.e.",35,#000000
+"Sino-Tibetan languages, n.i.e.",30,#000000
+"Siouan languages, n.i.e.",0,#000000
+Soninke,60,#000000
+Sotho-Tswana languages,20,#000000
+Squamish,0,#000000
+Stoney,0,#000000
+Straits,0,#000000
+Swahili,6915,#00A3DD
+Syilx (Okanagan),0,#000000
+"Tagalog (Pilipino, Filipino)",209100,#BF0D3E
+"Tai-Kadai languages, n.i.e.",10,#000000
+Tamil,157870,#EB7400
+Telugu,20395,#106827
+Thai,670,#00247D
+Tlingit,0,#000000
+Tsimshian,0,#000000
+Tulu,210,#d276fa
+"Turkic languages, n.i.e.",0,#000000
+Turkish,19685,#C8102E
+Uyghur,65,#000000
+Uzbek,165,#000000
+Vietnamese,59425,#C8102E
+"Wakashan languages, n.i.e.",0,#000000
+Waray-Waray,60,#000000
+Wojenaka,0,#000000
+Wolof,60,#000000
+Yoruba,9405,#006A4A
+Éwé,45,#000000
+Georgian,890,#DA291C
+Haida,0,#000000
+Hmong-Mien languages,0,#000000
+"Indigenous languages, n.i.e.",0,#000000
+"Indigenous languages, n.o.s.",0,#000000
+Japanese,12210,#BC002D
+Korean,55575,#0F64CD
+Ktunaxa (Kutenai),0,#000000
+Michif,0,#000000
+Mongolian,40,#000000
+English,6925070,#bdbdbd
+French,531975,#99c7ff
+Other,,#5c5c5c

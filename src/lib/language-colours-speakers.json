@@ -1,0 +1,1232 @@
+[
+  {
+    "Language": "Bosnian",
+    "Speakers": 3160,
+    "Colour": "#002F6C"
+  },
+  {
+    "Language": "Croatian",
+    "Speakers": 20260,
+    "Colour": "#ff0000"
+  },
+  {
+    "Language": "Dari",
+    "Speakers": 23215,
+    "Colour": "#007A36"
+  },
+  {
+    "Language": "Iranian Persian",
+    "Speakers": 89860,
+    "Colour": "#239F40"
+  },
+  {
+    "Language": "Odia",
+    "Speakers": 290,
+    "Colour": "#8576b3"
+  },
+  {
+    "Language": "Oriya, n.o.s.",
+    "Speakers": 150,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Persian (Farsi), n.o.s.",
+    "Speakers": 7600,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Serbian",
+    "Speakers": 24525,
+    "Colour": "#6A0080"
+  },
+  {
+    "Language": "Serbo-Croatian, n.i.e.",
+    "Speakers": 125,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Afrikaans",
+    "Speakers": 1220,
+    "Colour": "#FFB81C"
+  },
+  {
+    "Language": "Aramaic, n.o.s.",
+    "Speakers": 125,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Assamese",
+    "Speakers": 10,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Assyrian Neo-Aramaic",
+    "Speakers": 11565,
+    "Colour": "#945cd4"
+  },
+  {
+    "Language": "Baluchi",
+    "Speakers": 25,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Belarusian",
+    "Speakers": 180,
+    "Colour": "#D22730"
+  },
+  {
+    "Language": "Bengali",
+    "Speakers": 47810,
+    "Colour": "#006A4E"
+  },
+  {
+    "Language": "Bulgarian",
+    "Speakers": 2830,
+    "Colour": "#00966E"
+  },
+  {
+    "Language": "Chaldean Neo-Aramaic",
+    "Speakers": 2690,
+    "Colour": "#6FC7EA"
+  },
+  {
+    "Language": "Czech",
+    "Speakers": 1960,
+    "Colour": "#11457E"
+  },
+  {
+    "Language": "Danish",
+    "Speakers": 250,
+    "Colour": "#C8102E"
+  },
+  {
+    "Language": "Dutch",
+    "Speakers": 6940,
+    "Colour": "#fc5d00"
+  },
+  {
+    "Language": "German",
+    "Speakers": 47255,
+    "Colour": "#DD0000"
+  },
+  {
+    "Language": "Gujarati",
+    "Speakers": 96395,
+    "Colour": "#e02000"
+  },
+  {
+    "Language": "Hindi",
+    "Speakers": 336035,
+    "Colour": "#FF671F"
+  },
+  {
+    "Language": "Icelandic",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Indo-Aryan languages, n.i.e.",
+    "Speakers": 1265,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Kacchi",
+    "Speakers": 3400,
+    "Colour": "#004226"
+  },
+  {
+    "Language": "Karenic languages, n.i.e.",
+    "Speakers": 25,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Kashmiri",
+    "Speakers": 105,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Konkani",
+    "Speakers": 1820,
+    "Colour": "#0b72cf"
+  },
+  {
+    "Language": "Kurdish",
+    "Speakers": 3120,
+    "Colour": "#FEBD11"
+  },
+  {
+    "Language": "Latvian",
+    "Speakers": 380,
+    "Colour": "#A4343A"
+  },
+  {
+    "Language": "Lithuanian",
+    "Speakers": 1045,
+    "Colour": "#046A38"
+  },
+  {
+    "Language": "Low German, n.o.s.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Low Saxon",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Macedonian",
+    "Speakers": 8200,
+    "Colour": "#D82126"
+  },
+  {
+    "Language": "Marathi",
+    "Speakers": 11975,
+    "Colour": "#ff9700"
+  },
+  {
+    "Language": "Nepali",
+    "Speakers": 4915,
+    "Colour": "#DC143C"
+  },
+  {
+    "Language": "Norwegian",
+    "Speakers": 135,
+    "Colour": "#BA0C2F"
+  },
+  {
+    "Language": "Parsi",
+    "Speakers": 20,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Pashto",
+    "Speakers": 7810,
+    "Colour": "#D32011"
+  },
+  {
+    "Language": "Pennsylvania German",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Plautdietsch",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Polish",
+    "Speakers": 73975,
+    "Colour": "#DC143C"
+  },
+  {
+    "Language": "Punjabi (Panjabi)",
+    "Speakers": 314305,
+    "Colour": "#8DBF2E"
+  },
+  {
+    "Language": "Rohingya",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Russian",
+    "Speakers": 105200,
+    "Colour": "#1C3578"
+  },
+  {
+    "Language": "Rusyn",
+    "Speakers": 25,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "S'gaw Karen",
+    "Speakers": 205,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Sindhi",
+    "Speakers": 1650,
+    "Colour": "#d8edcb"
+  },
+  {
+    "Language": "Sinhala (Sinhalese)",
+    "Speakers": 8230,
+    "Colour": "#8D153A"
+  },
+  {
+    "Language": "Slavic languages, n.i.e.",
+    "Speakers": 10,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Slovak",
+    "Speakers": 1960,
+    "Colour": "#94219b"
+  },
+  {
+    "Language": "Slovene (Slovenian)",
+    "Speakers": 1140,
+    "Colour": "#3bb3aa"
+  },
+  {
+    "Language": "Swedish",
+    "Speakers": 500,
+    "Colour": "#006AA7"
+  },
+  {
+    "Language": "Swiss German",
+    "Speakers": 60,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Ukrainian",
+    "Speakers": 31805,
+    "Colour": "#0057B7"
+  },
+  {
+    "Language": "Urdu",
+    "Speakers": 225885,
+    "Colour": "#115740"
+  },
+  {
+    "Language": "Vlaams (Flemish)",
+    "Speakers": 20,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Yiddish",
+    "Speakers": 3890,
+    "Colour": "#005EB8"
+  },
+  {
+    "Language": "Amharic",
+    "Speakers": 9955,
+    "Colour": "#078930"
+  },
+  {
+    "Language": "Anicinabemowin (Algonquin)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Arabic",
+    "Speakers": 167535,
+    "Colour": "#007A3D"
+  },
+  {
+    "Language": "Atikamekw",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Berber languages, n.i.e.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Bilen",
+    "Speakers": 65,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Burmese",
+    "Speakers": 145,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Catalan",
+    "Speakers": 30,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Celtic languages, n.i.e.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Chinese languages, n.i.e.",
+    "Speakers": 30,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Chinese, n.o.s.",
+    "Speakers": 1155,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Cree languages",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Cushitic languages, n.i.e.",
+    "Speakers": 20,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Dakelh (Carrier)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Dane-zaa (Beaver)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Dene, n.o.s.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Frisian",
+    "Speakers": 65,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Gwich'in",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Hakka",
+    "Speakers": 4050,
+    "Colour": "#000095"
+  },
+  {
+    "Language": "Harari",
+    "Speakers": 560,
+    "Colour": "#DA121A"
+  },
+  {
+    "Language": "Hausa",
+    "Speakers": 290,
+    "Colour": "#1B7339"
+  },
+  {
+    "Language": "Hebrew",
+    "Speakers": 35070,
+    "Colour": "#005EB8"
+  },
+  {
+    "Language": "Indo-Iranian languages, n.i.e.",
+    "Speakers": 110,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Innu (Montagnais)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Irish",
+    "Speakers": 225,
+    "Colour": "#009A44"
+  },
+  {
+    "Language": "Italian",
+    "Speakers": 215100,
+    "Colour": "#007FA3"
+  },
+  {
+    "Language": "Italic (Romance) languages, n.i.e.",
+    "Speakers": 105,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Kabyle",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Kuki-Chin languages",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Malagasy, n.o.s.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Maltese",
+    "Speakers": 1180,
+    "Colour": "#C01B22"
+  },
+  {
+    "Language": "Mandarin",
+    "Speakers": 376050,
+    "Colour": "#DC4633"
+  },
+  {
+    "Language": "Merina",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Mi'kmaq",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Min Dong",
+    "Speakers": 295,
+    "Colour": "#002864"
+  },
+  {
+    "Language": "Min Nan (Chaochow, Teochow, Fukien, Taiwanese)",
+    "Speakers": 7765,
+    "Colour": "#DC0000"
+  },
+  {
+    "Language": "Mina",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Naskapi",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Oji-Cree",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Ojibway languages",
+    "Speakers": 105,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Oromo",
+    "Speakers": 605,
+    "Colour": "#0645B1"
+  },
+  {
+    "Language": "Portuguese",
+    "Speakers": 132505,
+    "Colour": "#E42518"
+  },
+  {
+    "Language": "Romanian",
+    "Speakers": 17035,
+    "Colour": "#002B7F"
+  },
+  {
+    "Language": "Scottish Gaelic",
+    "Speakers": 10,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Semitic languages, n.i.e.",
+    "Speakers": 90,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Slavey-Hare languages",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Somali",
+    "Speakers": 17520,
+    "Colour": "#4189DD"
+  },
+  {
+    "Language": "Spanish",
+    "Speakers": 241520,
+    "Colour": "#F1C500"
+  },
+  {
+    "Language": "Tahltan languages",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Tamazight",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Tibetan",
+    "Speakers": 4430,
+    "Colour": "#29166F"
+  },
+  {
+    "Language": "Tibeto-Burman languages, n.i.e.",
+    "Speakers": 80,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Tigrigna",
+    "Speakers": 6200,
+    "Colour": "#E4002B"
+  },
+  {
+    "Language": "Tlicho (Dogrib)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Tse'khene (Sekani)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Tsilhqot'in (Chilcotin)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Tsuu T'ina (Sarsi)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Tutchone languages",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Welsh",
+    "Speakers": 10,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Wetsuwet'en-Babine",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Wolastoqewi (Malecite)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Wu (Shanghainese)",
+    "Speakers": 2220,
+    "Colour": "#6c3bb1"
+  },
+  {
+    "Language": "Yue (Cantonese)",
+    "Speakers": 305015,
+    "Colour": "#077662"
+  },
+  {
+    "Language": "African, n.o.s.",
+    "Speakers": 20,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Akan (Twi)",
+    "Speakers": 9480,
+    "Colour": "#009739"
+  },
+  {
+    "Language": "Albanian",
+    "Speakers": 10060,
+    "Colour": "#DA291C"
+  },
+  {
+    "Language": "Algonquian languages, n.i.e.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "American Sign Language",
+    "Speakers": 1580,
+    "Colour": "#00A189"
+  },
+  {
+    "Language": "Armenian",
+    "Speakers": 8625,
+    "Colour": "#FF9E1B"
+  },
+  {
+    "Language": "Assiniboine",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Athabaskan languages, n.i.e.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Austro-Asiatic languages, n.i.e",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Austronesian languages, n.i.e.",
+    "Speakers": 1400,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Azerbaijani",
+    "Speakers": 1970,
+    "Colour": "#00AF66"
+  },
+  {
+    "Language": "Bamanankan",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Bikol",
+    "Speakers": 115,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Bisaya, n.o.s.",
+    "Speakers": 440,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Blackfoot",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Cayuga",
+    "Speakers": 10,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Cebuano",
+    "Speakers": 2610,
+    "Colour": "#d1ab00"
+  },
+  {
+    "Language": "Coptic",
+    "Speakers": 260,
+    "Colour": "#C09300"
+  },
+  {
+    "Language": "Creole languages, n.i.e.",
+    "Speakers": 390,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Creole, n.o.s.",
+    "Speakers": 2445,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Dakota",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Dinka",
+    "Speakers": 10,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Dravidian languages, n.i.e.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Edo",
+    "Speakers": 910,
+    "Colour": "#005000"
+  },
+  {
+    "Language": "Estonian",
+    "Speakers": 440,
+    "Colour": "#0072CE"
+  },
+  {
+    "Language": "Fijian",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Finnish",
+    "Speakers": 305,
+    "Colour": "#002F6C"
+  },
+  {
+    "Language": "Fulah (Pular, Pulaar, Fulfulde)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Ga",
+    "Speakers": 170,
+    "Colour": "#EF3340"
+  },
+  {
+    "Language": "Ganda",
+    "Speakers": 345,
+    "Colour": "#D90000"
+  },
+  {
+    "Language": "Gikuyu",
+    "Speakers": 50,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Gitxsan (Gitksan)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Greek",
+    "Speakers": 44250,
+    "Colour": "#001489"
+  },
+  {
+    "Language": "Haisla",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Haitian Creole",
+    "Speakers": 875,
+    "Colour": "#D21034"
+  },
+  {
+    "Language": "Halkomelem",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Heiltsuk",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Hiligaynon",
+    "Speakers": 1645,
+    "Colour": "#b33000"
+  },
+  {
+    "Language": "Hungarian",
+    "Speakers": 11165,
+    "Colour": "#477050"
+  },
+  {
+    "Language": "Igbo",
+    "Speakers": 1365,
+    "Colour": "#e48cc6"
+  },
+  {
+    "Language": "Ilocano",
+    "Speakers": 13305,
+    "Colour": "#17643a"
+  },
+  {
+    "Language": "Indonesian",
+    "Speakers": 1515,
+    "Colour": "#ff0000"
+  },
+  {
+    "Language": "Inuinnaqtun (Inuvialuktun)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Inuktitut",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Inuktut (Inuit) languages, n.i.e.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Iroquoian languages, n.i.e.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Jamaican English Creole",
+    "Speakers": 330,
+    "Colour": "#009B3A"
+  },
+  {
+    "Language": "Kankanaey",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Kannada",
+    "Speakers": 5240,
+    "Colour": "#ff0000"
+  },
+  {
+    "Language": "Kazakh",
+    "Speakers": 45,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Khmer (Cambodian)",
+    "Speakers": 2045,
+    "Colour": "#032EA1"
+  },
+  {
+    "Language": "Kinaray-a",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Kinyarwanda (Rwanda)",
+    "Speakers": 125,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Krio",
+    "Speakers": 20,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Kwak'wala (Kwakiutl)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Lao",
+    "Speakers": 1225,
+    "Colour": "#CE1126"
+  },
+  {
+    "Language": "Lillooet",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Lingala",
+    "Speakers": 610,
+    "Colour": "#0085CA"
+  },
+  {
+    "Language": "Luba-Kasai",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Malay",
+    "Speakers": 815,
+    "Colour": "#0032A0"
+  },
+  {
+    "Language": "Malayalam",
+    "Speakers": 18200,
+    "Colour": "#CC0000"
+  },
+  {
+    "Language": "Mohawk",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Morisyen",
+    "Speakers": 1265,
+    "Colour": "#00A551"
+  },
+  {
+    "Language": "Mwani",
+    "Speakers": 30,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Mòoré",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Ndebele",
+    "Speakers": 10,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Niger-Congo languages, n.i.e.",
+    "Speakers": 2675,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Nilo-Saharan languages, n.i.e.",
+    "Speakers": 180,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Nisga'a",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Ntlakapamux (Thompson)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Nuer",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Nuu-chah-nulth (Nootka)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Oneida",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Pampangan (Kapampangan, Pampango)",
+    "Speakers": 460,
+    "Colour": "#AB1368"
+  },
+  {
+    "Language": "Pangasinan",
+    "Speakers": 125,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Quebec Sign Language",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Rundi (Kirundi)",
+    "Speakers": 165,
+    "Colour": "#1EB53A"
+  },
+  {
+    "Language": "Salish languages, n.i.e.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Sango",
+    "Speakers": 30,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Secwepemctsin (Shuswap)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Shona",
+    "Speakers": 315,
+    "Colour": "#009739"
+  },
+  {
+    "Language": "Sign languages, n.i.e.",
+    "Speakers": 35,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Sino-Tibetan languages, n.i.e.",
+    "Speakers": 30,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Siouan languages, n.i.e.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Soninke",
+    "Speakers": 60,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Sotho-Tswana languages",
+    "Speakers": 20,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Squamish",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Stoney",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Straits",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Swahili",
+    "Speakers": 6915,
+    "Colour": "#00A3DD"
+  },
+  {
+    "Language": "Syilx (Okanagan)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Tagalog (Pilipino, Filipino)",
+    "Speakers": 209100,
+    "Colour": "#BF0D3E"
+  },
+  {
+    "Language": "Tai-Kadai languages, n.i.e.",
+    "Speakers": 10,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Tamil",
+    "Speakers": 157870,
+    "Colour": "#EB7400"
+  },
+  {
+    "Language": "Telugu",
+    "Speakers": 20395,
+    "Colour": "#106827"
+  },
+  {
+    "Language": "Thai",
+    "Speakers": 670,
+    "Colour": "#00247D"
+  },
+  {
+    "Language": "Tlingit",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Tsimshian",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Tulu",
+    "Speakers": 210,
+    "Colour": "#d276fa"
+  },
+  {
+    "Language": "Turkic languages, n.i.e.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Turkish",
+    "Speakers": 19685,
+    "Colour": "#C8102E"
+  },
+  {
+    "Language": "Uyghur",
+    "Speakers": 65,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Uzbek",
+    "Speakers": 165,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Vietnamese",
+    "Speakers": 59425,
+    "Colour": "#C8102E"
+  },
+  {
+    "Language": "Wakashan languages, n.i.e.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Waray-Waray",
+    "Speakers": 60,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Wojenaka",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Wolof",
+    "Speakers": 60,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Yoruba",
+    "Speakers": 9405,
+    "Colour": "#006A4A"
+  },
+  {
+    "Language": "Éwé",
+    "Speakers": 45,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Georgian",
+    "Speakers": 890,
+    "Colour": "#DA291C"
+  },
+  {
+    "Language": "Haida",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Hmong-Mien languages",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Indigenous languages, n.i.e.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Indigenous languages, n.o.s.",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Japanese",
+    "Speakers": 12210,
+    "Colour": "#BC002D"
+  },
+  {
+    "Language": "Korean",
+    "Speakers": 55575,
+    "Colour": "#0F64CD"
+  },
+  {
+    "Language": "Ktunaxa (Kutenai)",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Michif",
+    "Speakers": 0,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "Mongolian",
+    "Speakers": 40,
+    "Colour": "#000000"
+  },
+  {
+    "Language": "English",
+    "Speakers": 6925070,
+    "Colour": "#bdbdbd"
+  },
+  {
+    "Language": "French",
+    "Speakers": 531975,
+    "Colour": "#99c7ff"
+  },
+  {
+    "Language": "Other",
+    "Speakers": "",
+    "Colour": "#5c5c5c"
+  }
+]

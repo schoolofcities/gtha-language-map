@@ -75,7 +75,6 @@ for index, row in df2.iterrows():
             pt = gen_dot(geom, 1)
             dots.append([dauid, column, row[column], pt[0]])
 
-    break
 
 points = [Point(xy) for xy in [d[3] for d in dots]]
 dots = gpd.GeoDataFrame(dots, columns=['d', 'l', 's', 'c'], geometry=points)
@@ -83,4 +82,4 @@ dots = gpd.GeoDataFrame(dots, columns=['d', 'l', 's', 'c'], geometry=points)
 dots.crs = 'EPSG:4326'
 dots = dots[['d','l','s','geometry']]
 
-dots.to_file('gtha-da-2021-langauge-dots.geojson', driver='GeoJSON')
+dots.to_file('gtha-da-2021-language-dots.geojson', driver='GeoJSON')
