@@ -47,7 +47,8 @@ df2.insert(len(language_keep_list), 'Other', other_list_total)
 
 
 
-#defines function which creates a user-selected "number" of random points in each polygon region for each desired language 
+# generate dots
+
 def gen_dot(polygon, number):
     points = []    
     while len(points) < number:
@@ -58,7 +59,6 @@ def gen_dot(polygon, number):
 
 
 gdf = gpd.read_file("gtha-da-2021-clipped.geojson")
-
 
 dots = []
 
@@ -77,61 +77,10 @@ for index, row in df2.iterrows():
 
     break
 
-
-
 points = [Point(xy) for xy in [d[3] for d in dots]]
 dots = gpd.GeoDataFrame(dots, columns=['d', 'l', 's', 'c'], geometry=points)
-
-print(dots)
 
 dots.crs = 'EPSG:4326'
 dots = dots[['d','l','s','geometry']]
 
-print(dots)
-
-# dots.to_file('gtha-da-2021-langauge-dots.geojson', driver='GeoJSON')
-
-
-
-
-# #This cell creates randomly placed points in the polygon regions (corresponding to the ALT_GEO_CODEs) for each language which has more than 10 speakers
-
-# #reads-in shapefile with desired polygons in which to generate the random points
-# shapefile = geopandas.read_file("final_tracts.shp")
-
-# #specifies the coordinate reference system of the shapefile
-# # shapefile.crs=
-
-# #initializes empty lists
-# dauid_list=[]
-# x_list=[]
-# y_list=[]
-# language_list=[]
-# speaker_no_list=[]
-
-# #loops through all polygons and all languages; creates 1 randomly placed point in each polygon for each language which has more than 10 speakers in that given polygon
-# #saves the ALT_GEO_CODEs and coordinates of the randomly generated points, as well as their correponding languages and number of speakers, in separate lists
-# for alt_code in list(df2.index.values): #input df or df2, depending on whether interested in all languages present in df, or in the user-selected languages + other category present in df2
-#     for col in list(df2.columns.values): #input df or df2
-#         if df2.loc[alt_code, col]>=10: #input df or df2; input desired threshold number of speakers for the languages above which a point will be generated for the latter
-#             dauid_list.append(alt_code)
-#             point=gen_dot(shapefile.iloc[shapefile[shapefile['DAUID'] == str(alt_code)].index.to_numpy()[0], 4], 1)[0] #modify indicies according to shapefile
-#             x_list.append(point[0])
-#             y_list.append(point[1])
-#             language_list.append(col)
-#             speaker_no_list.append(df2.loc[alt_code, col]) #input df or df2
-
-#     break
-
-# #creates a dataframe of the ALT_GEO_CODES, the coordinates of the random points placed within the polygons corresponding to them, the languages corresponding to the random points, and the latters' respective number of speakers
-# dict={"DAUID": dauid_list, "x": x_list, "y": y_list, "Language": language_list, "Speaker_No": speaker_no_list}
-# rand_points = pd.DataFrame(dict)
-
-
-# #transforms the dataframe into a geodataframe using geopandas
-# gdf = geopandas.GeoDataFrame(
-#     rand_points, geometry=geopandas.points_from_xy(rand_points.x, rand_points.y))
-
-# #optionally,  uncomment the lines below to print "gdf" and save it as a geojson file
-# print(gdf)
-# #gdf.to_file("", driver='GeoJSON')
+dots.to_file('gtha-da-2021-langauge-dots.geojson', driver='GeoJSON')
