@@ -57,15 +57,13 @@ def gen_dot(polygon, number):
     return points
 
 
-gdf = gpd.read_file("gtha-da-2021.geojson")
+gdf = gpd.read_file("gtha-da-2021-clipped.geojson")
 
 
 dots = []
 
 for index, row in df2.iterrows():
 
-    
-    
     dauid = str(int(row["ALT_GEO_CODE"]))
     print(dauid)
 
@@ -77,12 +75,21 @@ for index, row in df2.iterrows():
             pt = gen_dot(geom, 1)
             dots.append([dauid, column, row[column], pt[0]])
 
+    break
+
+
 
 points = [Point(xy) for xy in [d[3] for d in dots]]
 dots = gpd.GeoDataFrame(dots, columns=['d', 'l', 's', 'c'], geometry=points)
+
+print(dots)
+
 dots.crs = 'EPSG:4326'
 dots = dots[['d','l','s','geometry']]
-dots.to_file('gtha-da-2021-langauge-dots.geojson', driver='GeoJSON')
+
+print(dots)
+
+# dots.to_file('gtha-da-2021-langauge-dots.geojson', driver='GeoJSON')
 
 
 

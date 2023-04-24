@@ -23,9 +23,18 @@ clip = clip[clip.geometry.apply(lambda x: isinstance(x, (Polygon, MultiPolygon))
 
 da = gpd.overlay(da, clip, how='difference', keep_geom_type = True)
 
+del clip
+
+clip = gpd.read_file("data/roads-rail-buffer.geojson")
+clip = clip[clip.geometry.apply(lambda x: isinstance(x, (Polygon, MultiPolygon)))]
+
+da = gpd.overlay(da, clip, how='difference', keep_geom_type = True)
+
 # da.to_file('gtha-da-2021-clipped.geojson', driver='GeoJSON')
 
 # da = gpd.read_file("gtha-da-2021-clipped.geojson")
+
+print(da)
 
 dap = da[da.geometry.apply(lambda x: isinstance(x, (Polygon, MultiPolygon)))]
 
@@ -34,6 +43,10 @@ dag = dag.explode()
 dag = dag[dag.geometry.apply(lambda x: isinstance(x, (Polygon, MultiPolygon)))]
 dag = dag.dissolve('DAUID', as_index = False)
 
+print(dag)
+
 da = pd.concat([dap, dag], ignore_index=True)
+
+print(da)
 
 da.to_file('gtha-da-2021-clipped.geojson', driver='GeoJSON')
