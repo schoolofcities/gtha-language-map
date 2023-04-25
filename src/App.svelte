@@ -386,7 +386,7 @@
       </p>
 
       <div id='legend'>
-        <svg height="74" width="155">
+        <svg height="74" width="157">
           <circle cx="33" cy="40" r="32" stroke="gray" stroke-width="1" fill="white" fill-opacity="0.1" />
           <circle cx="33" cy="61" r="10" stroke="gray" stroke-width="1" fill="white" fill-opacity="0.1" />
           <line x1="50" y1="9" x2="80" y2="9" stroke="black" stroke-dasharray="4 1 4 1" />
@@ -399,7 +399,8 @@
 
     <div id="after">
       <p>
-        Data are from the 2021 Canadian Census, and pertain to the number of people who <a href="https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/Definition-eng.cfm?ID=pop054"></a>"can conduct a conversation in a language".
+        Data are from the 2021 Canadian Census, and pertain to the number of people who <a href="https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/Definition-eng.cfm?ID=pop054">"can conduct a conversation in a language"</a>. 
+      Languages noted with <b>n.i.e.</b> denote "not included elsewhere", and <b>n.o.s.</b> denote "not otherwise specified".
       </p><p>
         This map was built by <a href="https://www.linkedin.com/in/anamariazamrii/">Ana-Maria Zamrii</a> and <a href = "http://jamaps.github.io/">Jeff Allen</a>. Code and data are on <a href="https://github.com/schoolofcities/gtha-language-map">GitHub</a>.
       </p>
