@@ -61,7 +61,6 @@ a:hover {
     left: 0; 
     width: 319px;
     border-right: 1px solid var(--brandGray);
-   
 }
 
 
@@ -206,8 +205,6 @@ p {
     margin-top: -0px;
     margin-bottom: 0px;
     text-align: left;
-    /* border-top: 1px solid var(--brandGray); */
-    /* border-bottom: 1px solid var(--brandGray); */
     border-radius: 0px;
     position: relative;
     border-bottom: solid 1px var(--brandGray);

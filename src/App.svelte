@@ -18,6 +18,7 @@
 
   let added_languages=[];
 
+
   const maxBounds = [
 		[-81.0, 42.4], // SW coords
 		[-78.0, 45.0] // NE coords
@@ -399,8 +400,8 @@
 
     <div id="after">
       <p>
-        Data are from the 2021 Canadian Census, and pertain to the number of people who <a href="https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/Definition-eng.cfm?ID=pop054">"can conduct a conversation in a language"</a>. 
-      Languages noted with <b>n.i.e.</b> denote "not included elsewhere", and <b>n.o.s.</b> denote "not otherwise specified".
+        Data are from the 2021 Canadian Census, and pertain to the number of people who <a href="https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/Definition-eng.cfm?ID=pop054">"can conduct a conversation"</a>, in the specified language. 
+      Those noted with <b>n.i.e.</b> denote "not included elsewhere", and <b>n.o.s.</b> denote "not otherwise specified".
       </p><p>
         This map was built by <a href="https://www.linkedin.com/in/anamariazamrii/">Ana-Maria Zamrii</a> and <a href = "http://jamaps.github.io/">Jeff Allen</a>. Code and data are on <a href="https://github.com/schoolofcities/gtha-language-map">GitHub</a>.
       </p>
