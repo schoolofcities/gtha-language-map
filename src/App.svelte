@@ -53,6 +53,21 @@
     map.addControl(new mapboxgl.ScaleControl(), 'bottom-right');
   
     map.on('load', () => {
+
+      map.addSource("csd", {
+        "type": "geojson",
+        "data": "data/gtha-csd.geojson"
+      });
+      map.addLayer({
+        "id": "csd",
+        "type": "line",
+        "source": "csd",
+        "paint": {
+          'line-width': 1, 
+          'line-color': ' #464646'
+          }
+        });
+
       
       map.addSource("languages", {
         "type": "geojson",
