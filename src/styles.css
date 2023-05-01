@@ -40,6 +40,8 @@ a:hover {
 }
 
 
+
+
 #map { 
     position: fixed; 
     top: 0; 
@@ -113,7 +115,7 @@ a:hover {
     border-radius: 5px;
     background-color: #efefef;
     padding-left: 1px;
-    padding-right: 5px;
+    padding-right: 10px;
     /* padding-top: 2px;
     padding-bottom: 2px; */
     display: inline-block;
@@ -124,6 +126,15 @@ a:hover {
     color: var(--brandRed);
     background-color: white;
 }
+
+.close {
+    position: absolute;
+    top: 5;
+    right: 5;
+    padding-left: 2px;
+    font-size: 12px;
+    line-height: 12px;
+  }
 
 #circle1 {
     fill-opacity: 0.5;
@@ -250,3 +261,4 @@ p {
 .mapboxgl-popup-close-button {
     padding: 8px;
 }
+

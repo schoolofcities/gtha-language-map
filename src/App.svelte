@@ -236,7 +236,7 @@
           var img = document.getElementById("circle1");
           var newimg21 = img.cloneNode(true);
           link.appendChild(newimg21);
-          link.insertAdjacentText('beforeend', ` ${id}`);
+          link.insertAdjacentHTML('beforeend', ` ${id} <span class="close">  &times;</span>`);
           }
 
           if (id == 'Italian'){
@@ -245,7 +245,7 @@
           var img = document.getElementById("circle1");
           var newimg25 = img.cloneNode(true);
           link.appendChild(newimg25);
-          link.insertAdjacentText('beforeend', ` ${id}`);
+          link.insertAdjacentHTML('beforeend', ` ${id}  <span class="close">&times;</span>`);
           }
 
           if (id == 'Mandarin'){
@@ -254,7 +254,7 @@
           var img = document.getElementById("circle1");
           var newimg17 = img.cloneNode(true);
           link.appendChild(newimg17);
-          link.insertAdjacentText('beforeend', ` ${id}`);
+          link.insertAdjacentHTML('beforeend', ` ${id} <span class="close">&times;</span>`);
           }
           const layers = document.getElementById('menu');
           layers.appendChild(link);
@@ -336,7 +336,7 @@
     var img = document.getElementById("circle1");
     var newimg = img.cloneNode(true);
     link.appendChild(newimg);
-    link.insertAdjacentText('beforeend', ` ${feature}`);
+    link.insertAdjacentHTML('beforeend', ` ${feature}  <span class="close">&times;</span>`);
   }
 
     
@@ -357,7 +357,8 @@
           getlink.onclick = function (e) {
 
             added_languages.splice(added_languages.indexOf(id), 1)
-            const clickedLayer = this.textContent.substring(1); //2
+            const clickedLayer = id;
+            // this.textContent.substring(1); //2
             chartLanguages = added_languages;
             e.preventDefault();
             e.stopPropagation();
