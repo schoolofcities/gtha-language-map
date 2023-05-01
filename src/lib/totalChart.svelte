@@ -27,7 +27,7 @@ $: console.log(filteredData);
 
 <div id="chart">
     <p id="chartTitle">
-        <b>Total Number of Speakers in the GTHA:</b>
+        <b>Total Number of Speakers in the GTHA in 2021:</b>
     </p>
     <svg height="{svgHeight}" width={svgWidth} id="svgChart">
         {#each filteredData as d, i}
