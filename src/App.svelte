@@ -15,9 +15,8 @@
 
   let dauid = 0;
   
-
-  let added_languages=[];
-
+  let added_languages = [];
+  let chartLanguages = [];
 
   const maxBounds = [
 		[-81.0, 42.4], // SW coords
@@ -30,6 +29,7 @@
     .map(item => item.Language);
   
   onMount(() => {
+
     map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/schoolofcities/clddge3j0006q01o7fi0p3xyq',
@@ -195,7 +195,7 @@
         for (const feature of languagelist) {
         //const name = normalize(feature.properties.Language);
         if (normalize(feature).includes(value) && value!='' && added_languages.includes(feature)==false) {
-        filtered.push(feature);
+          filtered.push(feature);
         }
         }
         //SORT HERE
@@ -219,6 +219,7 @@
         for (const id of languagelist){
           if (id ==='Italian' || id ==='Mandarin' || id==='Punjabi (Panjabi)') {
           added_languages.push(id)
+          chartLanguages = added_languages;
           const link = document.createElement('a');
           link.id = id;
           link.href = '#';
@@ -300,28 +301,30 @@
     
     // Show the filter input
     filterEl.parentNode.style.display = 'block';
-    }
+  }
     
-    function normalize(string) {
+  function normalize(string) {
     return string.trim().toLowerCase();
-    }
+  }
 
-    function trial(feature) {
-      added_languages.push(feature)
-      renderListings([]);
-      document.getElementById('feature-filter').value=''
-      const link = document.createElement('a');
-      link.id = feature;
-      link.href = '#';
-      //link.textContent = feature; //'X '+ feature
-      link.className = '';
+  function trial(feature) {
     
-   
-      const clickedLayer = feature;
-      map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-      link.className = 'active';
-      //e.preventDefault();
-      //e.stopPropagation();
+    added_languages.push(feature)
+    chartLanguages = added_languages;
+    renderListings([]);
+    document.getElementById('feature-filter').value=''
+    const link = document.createElement('a');
+    link.id = feature;
+    link.href = '#';
+    //link.textContent = feature; //'X '+ feature
+    link.className = '';
+  
+  
+    const clickedLayer = feature;
+    map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+    link.className = 'active';
+    //e.preventDefault();
+    //e.stopPropagation();
     
     
     const layers = document.getElementById('menu');
@@ -353,6 +356,7 @@
 
             added_languages.splice(added_languages.indexOf(id), 1)
             const clickedLayer = this.textContent.substring(1); //2
+            chartLanguages = added_languages;
             e.preventDefault();
             e.stopPropagation();
           
@@ -430,5 +434,6 @@
 
   <div id="map">
   </div>
+
 
 </main>
