@@ -9,6 +9,8 @@
   import { onMount } from 'svelte'
   import mapboxgl from "mapbox-gl";
 
+  import TotalChart from "./lib/totalChart.svelte";
+
   mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xhYjg0ZTl3MDIydDN3b3MzZmV4dXIydSJ9.lR7rnaKdBdTNGcc2kGDPbQ';
   
   let map;
@@ -398,6 +400,9 @@
     <input id="feature-filter" type="text" placeholder="Search For Languages (Click Above To Remove)">
 
     <div id="feature-listing" class="listing"></div>
+
+
+    <TotalChart {languageTotalColours} {chartLanguages}/>
 
     
     <div id="info">
