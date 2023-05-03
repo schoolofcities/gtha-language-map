@@ -15,7 +15,7 @@
   
   let map;
 
-  const circleColours = ['#DC4633', '#007FA3', '#8DBF2E', '#6D247A', '#0D534D', '#fca000', '#AB1368', '#6FC7EA', '#00A189', '#1E3765'];
+  const circleColours = ['#DC4633', '#007FA3', '#8DBF2E', '#6D247A', '#0D534D', '#fca000', '#AB1368', '#1E3765', '#00A189', '#33bf2e', '#fc008f', '#6FC7EA', '#8b1000', '#000ba3', '#5d6b44', '#b733ce', '#0dcabb', '#fcce00', '#624053', '#5a7cbb'];
 
   let mapCurrent = [
     {
