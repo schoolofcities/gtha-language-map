@@ -4,7 +4,6 @@ export let languageTotalColours;
 export let chartLanguages;
 export let mapCurrent;
 
-$: console.log(mapCurrent);
 
 $: filteredData = languageTotalColours.filter(item => chartLanguages.includes(item.Language));
 

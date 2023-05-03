@@ -88,6 +88,17 @@
           }
         });
 
+        map.addLayer({
+        "id": "csddash",
+        "type": "line",
+        "source": "csd",
+        "paint": {
+          'line-width': 1, 
+          'line-color': '#fff',
+          'line-dasharray': [2, 5]
+          }
+        });
+
       
       map.addSource("languages", {
         "type": "geojson",
