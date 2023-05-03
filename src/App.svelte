@@ -15,6 +15,24 @@
   
   let map;
 
+  const circleColours = ['#DC4633', '#007FA3', '#8DBF2E', '#6D247A', '#0D534D', '#AB1368', '#6FC7EA', '#00A189', '#1E3765', '#fca000'];
+
+  let mapCurrent = [
+    {
+      'Language': 'Mandarin',
+      "Colour": "#DC4633"
+    },
+    {
+      "Language": "Italian",
+      "Colour": "#007FA3"
+    },
+    {
+      'Language': "Punjabi (Panjabi)",
+      "Colour": "#8DBF2E"
+    }
+  ]
+
+
   let dauid = 0;
   
   let added_languages = [];
@@ -313,6 +331,17 @@
     
     added_languages.push(feature)
     chartLanguages = added_languages;
+
+
+    const usedColours = mapCurrent.map(item => item.Colour);
+    const newColour = circleColours.find(colour => usedColours.indexOf(colour) === -1);
+    console.log(newColour);
+    mapCurrent.push({
+      Language: feature,
+      Colour: newColour
+    });
+
+
     renderListings([]);
     document.getElementById('feature-filter').value=''
     const link = document.createElement('a');
@@ -324,6 +353,12 @@
   
     const clickedLayer = feature;
     map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+
+
+
+    map.setPaintProperty(clickedLayer, 'circle-stroke-color', newColour);
+    map.setPaintProperty(clickedLayer, 'circle-color', newColour);
+
     link.className = 'active';
     //e.preventDefault();
     //e.stopPropagation();
@@ -331,8 +366,8 @@
     
     const layers = document.getElementById('menu');
     layers.appendChild(link);
-    document.getElementById("color1").style.fill = languageTotalColours.find(item => item.Language === feature).Colour;
-    document.getElementById("color1").style.stroke = languageTotalColours.find(item => item.Language === feature).Colour;
+    document.getElementById("color1").style.fill = newColour;
+    document.getElementById("color1").style.stroke = newColour;
     var img = document.getElementById("circle1");
     var newimg = img.cloneNode(true);
     link.appendChild(newimg);
@@ -360,6 +395,11 @@
             const clickedLayer = id;
             // this.textContent.substring(1); //2
             chartLanguages = added_languages;
+
+
+            mapCurrent = mapCurrent.filter(item => item.Language !== clickedLayer);
+            console.log(mapCurrent);
+
             e.preventDefault();
             e.stopPropagation();
           

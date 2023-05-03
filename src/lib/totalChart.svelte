@@ -19,7 +19,6 @@ $: if (chartLanguages.length !== 0) {
     ratio = 0;
 }
 
-$: console.log(filteredData);
 
 
 </script>
