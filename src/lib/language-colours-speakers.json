@@ -1,5 +1,15 @@
 [
   {
+    "Language": "English",
+    "Speakers": 6925070,
+    "Colour": "#bdbdbd"
+  },
+  {
+    "Language": "French",
+    "Speakers": 531975,
+    "Colour": "#99c7ff"
+  },
+  {
     "Language": "Bosnian",
     "Speakers": 3160,
     "Colour": "#002F6C"
@@ -1213,16 +1223,6 @@
     "Language": "Mongolian",
     "Speakers": 40,
     "Colour": "#000000"
-  },
-  {
-    "Language": "English",
-    "Speakers": 6925070,
-    "Colour": "#bdbdbd"
-  },
-  {
-    "Language": "French",
-    "Speakers": 531975,
-    "Colour": "#99c7ff"
   },
   {
     "Language": "Other",

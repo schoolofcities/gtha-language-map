@@ -15,7 +15,7 @@
   
   let map;
 
-  const circleColours = ['#DC4633', '#007FA3', '#8DBF2E', '#6D247A', '#0D534D', '#AB1368', '#6FC7EA', '#00A189', '#1E3765', '#fca000'];
+  const circleColours = ['#DC4633', '#007FA3', '#8DBF2E', '#6D247A', '#0D534D', '#fca000', '#AB1368', '#6FC7EA', '#00A189', '#1E3765'];
 
   let mapCurrent = [
     {
@@ -334,8 +334,9 @@
 
 
     const usedColours = mapCurrent.map(item => item.Colour);
-    const newColour = circleColours.find(colour => usedColours.indexOf(colour) === -1);
-    console.log(newColour);
+    const newColour = (feature === 'English') ? '#D0D1C9' : circleColours.find(colour => usedColours.indexOf(colour) === -1) || '#000000';
+
+
     mapCurrent.push({
       Language: feature,
       Colour: newColour
@@ -398,7 +399,6 @@
 
 
             mapCurrent = mapCurrent.filter(item => item.Language !== clickedLayer);
-            console.log(mapCurrent);
 
             e.preventDefault();
             e.stopPropagation();
@@ -443,7 +443,7 @@
     <div id="feature-listing" class="listing"></div>
 
 
-    <TotalChart {languageTotalColours} {chartLanguages}/>
+    <TotalChart {languageTotalColours} {chartLanguages} {mapCurrent}/>
 
     
     <div id="info">

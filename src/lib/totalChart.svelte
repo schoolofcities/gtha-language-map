@@ -2,6 +2,9 @@
 
 export let languageTotalColours;
 export let chartLanguages;
+export let mapCurrent;
+
+$: console.log(mapCurrent);
 
 $: filteredData = languageTotalColours.filter(item => chartLanguages.includes(item.Language));
 
@@ -41,7 +44,7 @@ $: if (chartLanguages.length !== 0) {
                 y1 = {14 + i * 25}
                 x2 = {5 + svgWidth * d["Speakers"] / maxValue}
                 y2 = {14 + i * 25}
-                stroke ="{d.Colour}"
+                stroke ="{mapCurrent.find(item => item.Language === d["Language"])?.Colour}"
                 stroke-width = "2"
             ></line>
             
