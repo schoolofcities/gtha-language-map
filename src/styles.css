@@ -63,6 +63,7 @@ a:hover {
     left: 0; 
     width: 319px;
     border-right: 1px solid var(--brandGray);
+    overflow: auto;
 }
 
 
