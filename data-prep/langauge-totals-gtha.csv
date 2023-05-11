@@ -1,0 +1,246 @@
+,CHARACTERISTIC_NAME,C1_COUNT_TOTAL
+0,              Bosnian,8605.0
+1,              Croatian,32770.0
+2,              Dari,37860.0
+3,              Iranian Persian,103890.0
+4,              Odia,1285.0
+5,"              Oriya, n.o.s.",1015.0
+6,"              Persian (Farsi), n.o.s.",13945.0
+7,              Serbian,37800.0
+8,"              Serbo-Croatian, n.i.e.",1220.0
+9,            Afrikaans,5680.0
+10,"            Aramaic, n.o.s.",1165.0
+11,            Assamese,610.0
+12,            Assyrian Neo-Aramaic,16545.0
+13,            Baluchi,435.0
+14,            Belarusian,1145.0
+15,            Bengali,64590.0
+16,            Bulgarian,8680.0
+17,            Chaldean Neo-Aramaic,4850.0
+18,            Czech,7605.0
+19,            Danish,2395.0
+20,            Dutch,15015.0
+21,            German,60370.0
+22,            Gujarati,114565.0
+23,            Hindi,353450.0
+24,            Icelandic,180.0
+25,"            Indo-Aryan languages, n.i.e.",4855.0
+26,            Kacchi,7165.0
+27,"            Karenic languages, n.i.e.",120.0
+28,            Kashmiri,940.0
+29,            Konkani,5930.0
+30,            Kurdish,7785.0
+31,            Latvian,2805.0
+32,            Lithuanian,3850.0
+33,"            Low German, n.o.s.",20.0
+34,            Low Saxon,0.0
+35,            Macedonian,17755.0
+36,            Marathi,20790.0
+37,            Nepali,10360.0
+38,            Norwegian,1140.0
+39,            Parsi,450.0
+40,            Pashto,15525.0
+41,            Pennsylvania German,0.0
+42,            Plautdietsch,145.0
+43,            Polish,88675.0
+44,            Punjabi (Panjabi),332765.0
+45,            Rohingya,40.0
+46,            Russian,121255.0
+47,            Rusyn,95.0
+48,            S'gaw Karen,490.0
+49,            Sindhi,4910.0
+50,            Sinhala (Sinhalese),17655.0
+51,"            Slavic languages, n.i.e.",235.0
+52,            Slovak,6760.0
+53,            Slovene (Slovenian),5110.0
+54,            Swedish,3020.0
+55,            Swiss German,1085.0
+56,            Ukrainian,43105.0
+57,            Urdu,248415.0
+58,            Vlaams (Flemish),470.0
+59,            Yiddish,5480.0
+60,          Amharic,15695.0
+61,          Anicinabemowin (Algonquin),10.0
+62,          Arabic,189785.0
+63,          Atikamekw,0.0
+64,"          Berber languages, n.i.e.",105.0
+65,          Bilen,190.0
+66,          Burmese,1490.0
+67,          Catalan,445.0
+68,"          Celtic languages, n.i.e.",185.0
+69,"          Chinese languages, n.i.e.",365.0
+70,"          Chinese, n.o.s.",3925.0
+71,          Cree languages,230.0
+72,"          Cushitic languages, n.i.e.",225.0
+73,          Dakelh (Carrier),0.0
+74,          Dane-zaa (Beaver),0.0
+75,"          Dene, n.o.s.",15.0
+76,          Frisian,435.0
+77,          Gwich'in,0.0
+78,          Hakka,8290.0
+79,          Harari,1440.0
+80,          Hausa,1340.0
+81,          Hebrew,41580.0
+82,"          Indo-Iranian languages, n.i.e.",1070.0
+83,          Innu (Montagnais),0.0
+84,          Irish,1350.0
+85,          Italian,226005.0
+86,"          Italic (Romance) languages, n.i.e.",1385.0
+87,          Kabyle,330.0
+88,          Kuki-Chin languages,55.0
+89,"          Malagasy, n.o.s.",70.0
+90,          Maltese,4510.0
+91,          Mandarin,391545.0
+92,          Merina,10.0
+93,          Mi'kmaq,95.0
+94,          Min Dong,1305.0
+95,"          Min Nan (Chaochow, Teochow, Fukien, Taiwanese)",15485.0
+96,          Mina,70.0
+97,          Naskapi,0.0
+98,          Oji-Cree,15.0
+99,          Ojibway languages,715.0
+100,          Oromo,2215.0
+101,          Portuguese,148960.0
+102,          Romanian,30770.0
+103,          Scottish Gaelic,300.0
+104,"          Semitic languages, n.i.e.",375.0
+105,          Slavey-Hare languages,0.0
+106,          Somali,22955.0
+107,          Spanish,256450.0
+108,          Tahltan languages,0.0
+109,          Tamazight,190.0
+110,          Tibetan,7225.0
+111,"          Tibeto-Burman languages, n.i.e.",655.0
+112,          Tigrigna,10715.0
+113,          Tlicho (Dogrib),0.0
+114,          Tse'khene (Sekani),0.0
+115,          Tsilhqot'in (Chilcotin),0.0
+116,          Tsuu T'ina (Sarsi),0.0
+117,          Tutchone languages,0.0
+118,          Welsh,325.0
+119,          Wetsuwet'en-Babine,0.0
+120,          Wolastoqewi (Malecite),0.0
+121,          Wu (Shanghainese),5770.0
+122,          Yue (Cantonese),320285.0
+123,"        African, n.o.s.",480.0
+124,        Akan (Twi),14715.0
+125,        Albanian,20125.0
+126,"        Algonquian languages, n.i.e.",0.0
+127,        American Sign Language,6875.0
+128,        Armenian,16525.0
+129,        Assiniboine,0.0
+130,"        Athabaskan languages, n.i.e.",0.0
+131,"        Austro-Asiatic languages, n.i.e",155.0
+132,"        Austronesian languages, n.i.e.",5175.0
+133,        Azerbaijani,4860.0
+134,        Bamanankan,350.0
+135,        Bikol,1155.0
+136,"        Bisaya, n.o.s.",2660.0
+137,        Blackfoot,0.0
+138,        Cayuga,45.0
+139,        Cebuano,8170.0
+140,        Coptic,1700.0
+141,"        Creole languages, n.i.e.",2835.0
+142,"        Creole, n.o.s.",7235.0
+143,        Dakota,0.0
+144,        Dinka,55.0
+145,"        Dravidian languages, n.i.e.",495.0
+146,        Edo,2650.0
+147,        Estonian,2645.0
+148,        Fijian,160.0
+149,        Finnish,2855.0
+150,"        Fulah (Pular, Pulaar, Fulfulde)",525.0
+151,        Ga,1395.0
+152,        Ganda,1990.0
+153,        Gikuyu,765.0
+154,        Gitxsan (Gitksan),0.0
+155,        Greek,60155.0
+156,        Haisla,0.0
+157,        Haitian Creole,3610.0
+158,        Halkomelem,0.0
+159,        Heiltsuk,0.0
+160,        Hiligaynon,5260.0
+161,        Hungarian,23175.0
+162,        Igbo,5335.0
+163,        Ilocano,22440.0
+164,        Indonesian,5925.0
+165,        Inuinnaqtun (Inuvialuktun),20.0
+166,        Inuktitut,85.0
+167,"        Inuktut (Inuit) languages, n.i.e.",0.0
+168,"        Iroquoian languages, n.i.e.",10.0
+169,        Jamaican English Creole,2630.0
+170,        Kankanaey,465.0
+171,        Kannada,10525.0
+172,        Kazakh,475.0
+173,        Khmer (Cambodian),4965.0
+174,        Kinaray-a,235.0
+175,        Kinyarwanda (Rwanda),1210.0
+176,        Krio,400.0
+177,        Kwak'wala (Kwakiutl),0.0
+178,        Lao,3685.0
+179,        Lillooet,0.0
+180,        Lingala,3285.0
+181,        Luba-Kasai,385.0
+182,        Malay,3380.0
+183,        Malayalam,32010.0
+184,        Mohawk,155.0
+185,        Morisyen,4580.0
+186,        Mwani,395.0
+187,        M�or�,40.0
+188,        Ndebele,550.0
+189,"        Niger-Congo languages, n.i.e.",7415.0
+190,"        Nilo-Saharan languages, n.i.e.",1060.0
+191,        Nisga'a,0.0
+192,        Ntlakapamux (Thompson),0.0
+193,        Nuer,45.0
+194,        Nuu-chah-nulth (Nootka),0.0
+195,        Oneida,0.0
+196,"        Pampangan (Kapampangan, Pampango)",2985.0
+197,        Pangasinan,1385.0
+198,        Quebec Sign Language,35.0
+199,        Rundi (Kirundi),1015.0
+200,"        Salish languages, n.i.e.",0.0
+201,        Sango,85.0
+202,        Secwepemctsin (Shuswap),0.0
+203,        Shona,1825.0
+204,"        Sign languages, n.i.e.",1060.0
+205,"        Sino-Tibetan languages, n.i.e.",335.0
+206,"        Siouan languages, n.i.e.",0.0
+207,        Soninke,265.0
+208,        Sotho-Tswana languages,455.0
+209,        Squamish,0.0
+210,        Stoney,0.0
+211,        Straits,0.0
+212,        Swahili,14825.0
+213,        Syilx (Okanagan),0.0
+214,"        Tagalog (Pilipino, Filipino)",228395.0
+215,"        Tai-Kadai languages, n.i.e.",285.0
+216,        Tamil,175890.0
+217,        Telugu,30530.0
+218,        Thai,3510.0
+219,        Tlingit,10.0
+220,        Tsimshian,0.0
+221,        Tulu,1065.0
+222,"        Turkic languages, n.i.e.",790.0
+223,        Turkish,33065.0
+224,        Uyghur,510.0
+225,        Uzbek,1190.0
+226,        Vietnamese,77355.0
+227,"        Wakashan languages, n.i.e.",0.0
+228,        Waray-Waray,1445.0
+229,        Wojenaka,90.0
+230,        Wolof,735.0
+231,        Yoruba,17215.0
+232,        �w�,785.0
+233,      Georgian,1935.0
+234,      Haida,0.0
+235,      Hmong-Mien languages,30.0
+236,"      Indigenous languages, n.i.e.",25.0
+237,"      Indigenous languages, n.o.s.",35.0
+238,      Japanese,22135.0
+239,      Korean,71745.0
+240,      Ktunaxa (Kutenai),0.0
+241,      Michif,10.0
+242,      Mongolian,580.0
+243,    English,6925405.0
+244,    French,534255.0
